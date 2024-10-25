@@ -1,18 +1,15 @@
 export default defineNuxtConfig({
+  css: ['~/assets/css/main.css'],
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: ['@pinia/nuxt', '@nuxtjs/i18n'],
+  modules: ['@pinia/nuxt'],
   pinia: {
     storesDirs: ['./stores/**'],
   },
-  i18n: {
-    locales: [
-      { code: 'uk', iso: 'uk-UA', file: 'uk.json' },
-      { code: 'en', iso: 'en-US', file: 'en.json' },
-    ],
-    defaultLocale: 'uk',
-    langDir: './locales',
-    strategy: 'prefix_except_default',
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
   },
-  plugins: ['~/plugins/bootstrap-client.js'],
 })
