@@ -43,7 +43,7 @@
           </div>
           <div class="mt-[150px]" style="z-index: 1">
             <button
-              class="font-[400] text-[#252525] text-[22px] mx-auto max-w-[100%] py-6 px-20 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-[30px]"
+              class="font-[400] text-[#252525] text-[22px] mx-auto max-w-[100%] py-6 px-6 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-[30px]"
             >
               ХОЧУ НА МАРАФОН
             </button>
