@@ -9,8 +9,22 @@ export default {
     './error.vue',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#F15BA8',
+        secondary: '#FFFFFF',
+        'page-bg': 'black',
+      },
+      screens: {
+        xs: '320px',
+      },
+      boxShadow: {
+        'pink-shadow': 'inset -10px 10px 13px -11px rgb(255 107 183)',
+      },
+      gridColumn: {
+        'span-3/2': 'span 3 / span 2',
+      },
+    },
   },
-  plugins: [],
 }
 
