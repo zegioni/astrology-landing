@@ -11,7 +11,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#F15BA8',
+        primary: 'white',
         secondary: '#FFFFFF',
         'page-bg': 'black',
       },
@@ -24,7 +24,9 @@ export default {
       gridColumn: {
         'span-3/2': 'span 3 / span 2',
       },
+      hueRotate: {
+        'custom': '210deg',
+      },
     },
   },
 }
-

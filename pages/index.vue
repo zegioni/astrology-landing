@@ -2,10 +2,10 @@
   <section>
     <div class="bg-hero-image pb-[1px]">
       <div class="mb-5">
-        <div class="max-w-[500px] mx-auto">
+        <div data-aos="fade-zoom" class="max-w-[500px] mx-auto">
           <div class="flex justify-end p-4">
             <h2
-              class="bg-black bg-opacity-[2%] border-[1px] border-[#ffffff42] backdrop-blur-[2px] p-4 rounded-[8px] text-primary font-bold text-[32px]"
+              class="bg-black bg-opacity-[32%] backdrop-blur-[25px] p-5 border-2 border-[#ffffff42] rounded-[8px] text-primary font-bold text-[32px]"
             >
               СТАРТ 07.11
             </h2>
@@ -15,6 +15,7 @@
           <div class="container-2xl mx-auto pl-3 pr-3 mt-11">
             <div class="relative">
               <img
+                data-aos="fade-zoom"
                 class="hero-image mx-auto max-w-[100%]"
                 width="800"
                 src="@/assets/images/hero-image.png"
@@ -24,7 +25,7 @@
                 class="absolute h-auto w-full left-1/2 transform -translate-x-1/2 -bottom-[120px]"
               >
                 <div
-                  class="max-w-[600px] mx-auto bg-black bg-opacity-[32%] backdrop-blur-[25px] p-5 rounded-[10px] border-2 border-[#80808045]"
+                  data-aos="flip-left" class="max-w-[600px] mx-auto bg-black bg-opacity-[32%] backdrop-blur-[25px] p-5 rounded-[10px] border-2 border-[#80808045]"
                 >
                   <div class="text-left">
                     <h2 class="text-white text-[22px]">
@@ -41,12 +42,15 @@
               </div>
             </div>
           </div>
-          <div class="mt-[150px]" style="z-index: 1">
-            <button
-              class="font-[400] text-[#252525] text-[22px] mx-auto max-w-[100%] py-6 px-6 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-[30px]"
+          <div class="mt-[150px]" style="z-index: 1" data-aos="fade-right">
+            <NuxtLink :to="{ path: '/', hash: '#price' }">
+              <button
+                class="font-[400] text-[#252525] text-[22px] mx-auto max-w-[100%] py-6 px-6 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-[30px]"
+              >
+                ХОЧУ НА МАРАФОН
+              </button>
+              </NuxtLink
             >
-              ХОЧУ НА МАРАФОН
-            </button>
           </div>
         </div>
       </div>
@@ -55,7 +59,7 @@
 
   <section class="py-16 relative">
     <div class="container-xl mx-auto px-4">
-      <div class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14">
+      <div class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14" data-aos="fade-up">
         <h2 class="grad gradient-text text-center leading-none">
           ДЛЯ КОГО МАРАФОН <br />ЭНЕРГІЇ ДУШІ
         </h2>
@@ -64,7 +68,7 @@
       <div
         class="w-fit mx-auto grid grid-cols-2 md:grid-cols-3 justify-items-center mt-8 gap-[20px]"
       >
-        <div
+        <div data-aos="fade-up"
           class="shadow-pink-shadow bg-white text-white bg-opacity-[15%] backdrop-blur-[2px] rounded-lg p-3 flex flex-col justify-center items-center max-w-[250px] text-center border-[1px] border-[#ffffff42]"
         >
           <img
@@ -72,12 +76,12 @@
             src="@/assets/images/memoji-astrology-girl-make-natal-map.png"
             alt=""
           />
-          <h3 class="text-pink-500 text-[18px] font-[800]">Для Вас якщо</h3>
+          <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
           <p class="text-white text-[16px]">
             Ви хочите знайти баланс між духовним та матеріальним
           </p>
         </div>
-        <div
+        <div data-aos="fade-up"
           class="shadow-pink-shadow bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] rounded-lg p-3 flex flex-col justify-center items-center max-w-[250px] text-center border-[1px] border-[#ffffff42]"
         >
           <img
@@ -85,12 +89,12 @@
             src="@/assets/images/memoji-astrology-wheel.png"
             alt=""
           />
-          <h3 class="text-pink-500 text-[18px] font-[800]">Для Вас якщо</h3>
+          <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
           <p class="text-white text-[16px]">
             Ви відчуваєте , що щось заважає жити повноцінно
           </p>
         </div>
-        <div
+        <div data-aos="fade-up"
           class="shadow-pink-shadow bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] rounded-lg p-3 flex flex-col justify-center items-center max-w-[250px] text-center border-[1px] border-[#ffffff42]"
         >
           <img
@@ -98,12 +102,12 @@
             src="@/assets/images/memoji-man.png.png"
             alt=""
           />
-          <h3 class="text-pink-500 text-[18px] font-[800]">Для Вас якщо</h3>
+          <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
           <p class="text-white text-[16px]">
             Ви в Вашому житті повторюються проблеми в стосунках та з грошима
           </p>
         </div>
-        <div
+        <div data-aos="fade-up"
           class="shadow-pink-shadow bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] rounded-lg p-3 flex flex-col justify-center items-center max-w-[250px] text-center border-[1px] border-[#ffffff42]"
         >
           <img
@@ -111,12 +115,12 @@
             src="@/assets/images/memoji-moon.png"
             alt=""
           />
-          <h3 class="text-pink-500 text-[18px] font-[800]">Для Вас якщо</h3>
+          <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
           <p class="text-white text-[16px]">
             Ви хочите вийти з кола невдач та страхів
           </p>
         </div>
-        <div
+        <div data-aos="fade-up"
           class="shadow-pink-shadow bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] rounded-lg p-3 flex flex-col justify-center items-center max-w-[250px] text-center border-[1px] border-[#ffffff42]"
         >
           <img
@@ -124,12 +128,12 @@
             src="@/assets/images/memoji-spiritual.png"
             alt=""
           />
-          <h3 class="text-pink-500 text-[18px] font-[800]">Для Вас якщо</h3>
+          <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
           <p class="text-white text-[16px]">
             Ви не розумієте, чого хочете насправді в житті
           </p>
         </div>
-        <div
+        <div data-aos="fade-up"
           class="shadow-pink-shadow bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] rounded-lg p-3 flex flex-col justify-center items-center max-w-[250px] text-center border-[1px] border-[#ffffff42]"
         >
           <img
@@ -137,7 +141,7 @@
             src="@/assets/images/memoji-mystical-moon.png "
             alt=""
           />
-          <h3 class="text-pink-500 text-[18px] font-[800]">Для Вас якщо</h3>
+          <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
           <p class="text-white text-[16px]">
             Ви відчуваєте, що потребуєте змін, але не знаєте, з чого почати
           </p>
@@ -148,13 +152,13 @@
 
   <section class="py-16 relative">
     <div class="container-xl mx-auto px-4">
-      <div class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14">
+      <div class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14" data-aos="fade-up">
         <h2 class="grad gradient-text text-center leading-none">
           ФОРМАТ МАРАФОНУ <br />ЭНЕРГІЇ ДУШІ
         </h2>
       </div>
       <div class="flex items-center justify-center">
-        <div
+        <div  data-aos="fade-up"
           class="max-w-[300px] bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] border-[1px] border-[#ffffff42] text-white p-6 rounded-lg"
         >
           <div class="flex flex-row gap-4 relative">
@@ -163,13 +167,13 @@
             ></div>
 
             <ul class="text-[22px]">
-              <li class="text-before mb-4 leading-8">
+              <li class="text-before mb-4 leading-8" data-aos="fade-right">
                 <h3>
                   <span class="text-primary font-bold">30 хвилин</span> в день
                   Вашого часу
                 </h3>
               </li>
-              <li class="text-before mb-4 leading-8">
+              <li class="text-before mb-4 leading-8" data-aos="fade-right">
                 <h3>
                   Ви приходите на першій вебінар:
                   <span class="text-primary font-bold"
@@ -177,7 +181,7 @@
                   >
                 </h3>
               </li>
-              <li class="text-before mb-4 leading-8">
+              <li class="text-before mb-4 leading-8" data-aos="fade-right">
                 <h3>
                   Ви приходите на другий вебінар:
                   <span class="text-primary font-bold"
@@ -186,7 +190,7 @@
                   >
                 </h3>
               </li>
-              <li class="text-before mb-4 leading-8">
+              <li class="text-before mb-4 leading-8" data-aos="fade-right">
                 <h3>
                   Ви
                   <span class="text-primary font-bold">насолоджуєтесь</span> від
@@ -202,7 +206,7 @@
 
   <section class="py-16 relative">
     <div class="container-xl mx-auto px-4">
-      <div class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14">
+      <div class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14" data-aos="fade-up">
         <h2 class="grad gradient-text text-center leading-none">
           ЯКІ РЕЗУЛЬТАТИ ВИ ОТРИМУЄТЕ
           <br />ЗА 10 ДНІВ МАРАФОНУ?
@@ -210,11 +214,12 @@
       </div>
       <div class="flex items-center justify-center">
         <div
-          class="shadow-pink-shadow max-w-[420px] bg-white backdrop-blur-[25px] border-[1px] border-[#ffffff42] text-white p-6 rounded-lg"
+          data-aos="fade-up"
+          class="max-w-[420px] bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] border-[1px] border-[#ffffff42] text-white p-6 rounded-lg"
         >
           <div class="flex flex-row gap-4 relative">
-            <ul class="text-[22px] text-black">
-              <li class="mb-4 leading-8 flex flex-row gap-5 items-center">
+            <ul class="text-[22px] text-white">
+              <li class="mb-4 leading-8 flex flex-row gap-5 items-center" data-aos="fade-up">
                 <img
                   width="32"
                   height="32"
@@ -229,7 +234,7 @@
                   своєї душі
                 </h3>
               </li>
-              <li class="mb-4 leading-8 flex flex-row gap-5 items-center">
+              <li class="mb-4 leading-8 flex flex-row gap-5 items-center" data-aos="fade-up">
                 <img
                   width="32"
                   height="32"
@@ -241,7 +246,7 @@
                   енергетичних блоків
                 </h3>
               </li>
-              <li class="mb-4 leading-8 flex flex-row gap-5 items-center">
+              <li class="mb-4 leading-8 flex flex-row gap-5 items-center" data-aos="fade-up">
                 <img
                   width="32"
                   height="32"
@@ -254,7 +259,7 @@
                   кармічні впливи на своє життя
                 </h3>
               </li>
-              <li class="mb-4 leading-8 flex flex-row gap-5 items-center">
+              <li class="mb-4 leading-8 flex flex-row gap-5 items-center" data-aos="fade-up">
                 <img
                   width="32"
                   height="32"
@@ -267,7 +272,7 @@
                   своєї душі та життеву силу
                 </h3>
               </li>
-              <li class="mb-4 leading-8 flex flex-row gap-5 items-center">
+              <li class="mb-4 leading-8 flex flex-row gap-5 items-center" data-aos="fade-up">
                 <img
                   width="32"
                   height="32"
@@ -290,18 +295,18 @@
   </section>
 
   <!-- PRICE -->
-  <section class="py-16 relative">
+  <section id="price" class="py-16 relative overflow-hidden">
     <div class="container-xl mx-auto px-4">
-      <div class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14">
+      <div class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14" data-aos="fade-up">
         <h2 class="grad gradient-text text-center leading-none">
-          ПРОПОНУЄМО ТРИ ПАКЕТИ<br />
+          ПРОПОНУЄМО ДВА ПАКЕТИ<br />
           УЧАСТІ
         </h2>
       </div>
       <div class="w-fit mx-auto">
         <div class="flex justify-center gap-11 flex-col lg:flex-row">
           <div class="flex gap-11 flex-col md:flex-row">
-            <div
+            <div data-aos="fade-right"
               class="relative max-w-[320px] bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] border-[1px] border-[#ffffff42] text-white p-6 rounded-lg"
             >
               <div class="flex flex-col justify-between h-full">
@@ -342,25 +347,25 @@
                 </div>
                 <div class="flex flex-col justify-center items-center mt-12">
                   <button
-                    class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full shadow-xl shadow-slate-800"
+                    class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
                   >
                     ОПЛАТИТЬ
                   </button>
                 </div>
               </div>
-              <div class="absolute top-[-10%] right-[-6%] z-10 p-2">
+              <div class="absolute top-[-6%] right-[-19%] z-10 p-2 hue-rotate-custom">
                 <span class="">
                   <img
                     width="128"
-                    src="@/assets/images/icon-heart.png"
+                    src="@/assets/images/standard-price.png"
                     alt=""
                   />
                 </span>
               </div>
             </div>
 
-            <div
-              class="shadow-pink-shadow relative max-w-[320px] bg-white backdrop-blur-[25px] border-[1px] border-[#ffffff42] p-6 rounded-lg text-black"
+            <div data-aos="fade-right"
+              class="relative max-w-[320px] bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] border-[1px] border-[#ffffff42] p-6 rounded-lg text-white"
             >
               <div class="flex flex-col justify-between h-full">
                 <h2 class="text-2xl font-bold mb-4 text-left text-[32px]">
@@ -405,78 +410,21 @@
                   </li>
                 </ul>
                 <div class="text-center flex flex-col mt-12">
-                  <span class="text-4xl font-bold text-black">1699</span>
+                  <span class="text-4xl font-bold">1699</span>
                 </div>
                 <div class="flex flex-col justify-center items-center mt-12">
                   <button
-                    class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full shadow-lg"
+                    class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
                   >
                     ОПЛАТИТЬ
                   </button>
                 </div>
               </div>
-              <div class="absolute top-[-10%] right-[-6%] z-10 p-2">
+              <div class="absolute top-[-8%] right-[-19%] z-10 p-2 rotate-[13deg] hue-rotate-custom">
                 <span class="">
                   <img
                     width="128"
-                    src="@/assets/images/icon-heart.png"
-                    alt=""
-                  />
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex justify-center">
-            <div
-              class="relative max-w-[320px] bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] border-[1px] border-[#ffffff42] text-white p-6 rounded-lg"
-            >
-              <div class="flex flex-col justify-between h-full">
-                <h2 class="text-2xl font-bold mb-4 text-left text-[32px]">
-                  VIP-чат зі мною
-                </h2>
-                <ul class="list-decimal list-inside mb-4 text-[18px] flex-1">
-                  <li>
-                    <span class="text-primary font-bold">Усі</span> послуги з
-                    плану Vip
-                  </li>
-                  <li>
-                    <span class="text-primary font-bold">Приватний чат</span> зі
-                    мною
-                  </li>
-                  <li>
-                    Можливість
-                    <span class="text-primary font-bold">задати питання</span>
-                    та
-                    <span class="text-primary font-bold">отримати</span>
-                    відповідь
-                  </li>
-                  <li>
-                    <span class="text-primary font-bold">5 медітацій</span> в
-                    доступ на завжди
-                  </li>
-                  <li>
-                    Вебінар з можливістю отримати особистий
-                    <span class="text-primary font-bold">розбір</span> та
-                    <span class="text-primary font-bold">все відповіді</span>
-                  </li>
-                </ul>
-                <div class="text-center flex flex-col mt-12">
-                  <span class="text-4xl font-bold text-white">1699</span>
-                </div>
-                <div class="flex flex-col justify-center items-center mt-12">
-                  <button
-                    class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full shadow-xl shadow-slate-800"
-                  >
-                    ОПЛАТИТЬ
-                  </button>
-                </div>
-              </div>
-              <div class="absolute top-[-10%] right-[-6%] z-10 p-2">
-                <span class="">
-                  <img
-                    width="128"
-                    src="@/assets/images/icon-heart.png"
+                    src="@/assets/images/vip-price.png"
                     alt=""
                   />
                 </span>
@@ -504,13 +452,13 @@
   background-image: url('@/assets/images/background-hero-section.png');
   background-size: cover;
   background-position-x: left;
-  opacity: 0.2;
+  opacity: 0.7;
   z-index: 0;
 }
 
 .hero-image {
-  filter: drop-shadow(0 0 15px rgba(241, 91, 168, 0.5))
-    drop-shadow(0 0 30px rgba(241, 91, 168, 0.3));
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.31))
+    drop-shadow(0 0 30px rgba(255, 255, 255, 0.295));
 }
 
 .gradient-text {
