@@ -7,7 +7,7 @@
             <h2
               class="bg-black bg-opacity-[32%] backdrop-blur-[25px] p-5 border-2 border-[#ffffff42] rounded-[8px] text-primary font-bold text-[32px]"
             >
-              СТАРТ 07.11
+              СТАРТ 10.11
             </h2>
           </div>
         </div>
@@ -25,7 +25,8 @@
                 class="absolute h-auto w-full left-1/2 transform -translate-x-1/2 -bottom-[120px]"
               >
                 <div
-                  data-aos="flip-left" class="max-w-[600px] mx-auto bg-black bg-opacity-[32%] backdrop-blur-[25px] p-5 rounded-[10px] border-2 border-[#80808045]"
+                  data-aos="flip-left"
+                  class="max-w-[600px] mx-auto bg-black bg-opacity-[32%] backdrop-blur-[25px] p-5 rounded-[10px] border-2 border-[#80808045]"
                 >
                   <div class="text-left">
                     <h2 class="text-white text-[22px]">
@@ -49,8 +50,7 @@
               >
                 ХОЧУ НА МАРАФОН
               </button>
-              </NuxtLink
-            >
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -59,7 +59,10 @@
 
   <section class="py-16 relative">
     <div class="container-xl mx-auto px-4">
-      <div class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14" data-aos="fade-up">
+      <div
+        class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14"
+        data-aos="fade-up"
+      >
         <h2 class="grad gradient-text text-center leading-none">
           ДЛЯ КОГО МАРАФОН <br />ЭНЕРГІЇ ДУШІ
         </h2>
@@ -68,7 +71,8 @@
       <div
         class="w-fit mx-auto grid grid-cols-2 md:grid-cols-3 justify-items-center mt-8 gap-[20px]"
       >
-        <div data-aos="fade-up"
+        <div
+          data-aos="fade-up"
           class="shadow-pink-shadow bg-white text-white bg-opacity-[15%] backdrop-blur-[2px] rounded-lg p-3 flex flex-col justify-center items-center max-w-[250px] text-center border-[1px] border-[#ffffff42]"
         >
           <img
@@ -81,7 +85,8 @@
             Ви хочите знайти баланс між духовним та матеріальним
           </p>
         </div>
-        <div data-aos="fade-up"
+        <div
+          data-aos="fade-up"
           class="shadow-pink-shadow bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] rounded-lg p-3 flex flex-col justify-center items-center max-w-[250px] text-center border-[1px] border-[#ffffff42]"
         >
           <img
@@ -91,10 +96,11 @@
           />
           <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
           <p class="text-white text-[16px]">
-            Ви відчуваєте , що щось заважає жити повноцінно
+            Ви відчуваєте, що щось заважає жити повноцінно
           </p>
         </div>
-        <div data-aos="fade-up"
+        <div
+          data-aos="fade-up"
           class="shadow-pink-shadow bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] rounded-lg p-3 flex flex-col justify-center items-center max-w-[250px] text-center border-[1px] border-[#ffffff42]"
         >
           <img
@@ -104,10 +110,11 @@
           />
           <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
           <p class="text-white text-[16px]">
-            Ви в Вашому житті повторюються проблеми в стосунках та з грошима
+            В Вашому житті повторюються проблеми в стосунках та з грошима
           </p>
         </div>
-        <div data-aos="fade-up"
+        <div
+          data-aos="fade-up"
           class="shadow-pink-shadow bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] rounded-lg p-3 flex flex-col justify-center items-center max-w-[250px] text-center border-[1px] border-[#ffffff42]"
         >
           <img
@@ -117,10 +124,11 @@
           />
           <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
           <p class="text-white text-[16px]">
-            Ви хочите вийти з кола невдач та страхів
+            Ви хочете вийти з кола невдач та страхів
           </p>
         </div>
-        <div data-aos="fade-up"
+        <div
+          data-aos="fade-up"
           class="shadow-pink-shadow bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] rounded-lg p-3 flex flex-col justify-center items-center max-w-[250px] text-center border-[1px] border-[#ffffff42]"
         >
           <img
@@ -133,7 +141,8 @@
             Ви не розумієте, чого хочете насправді в житті
           </p>
         </div>
-        <div data-aos="fade-up"
+        <div
+          data-aos="fade-up"
           class="shadow-pink-shadow bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] rounded-lg p-3 flex flex-col justify-center items-center max-w-[250px] text-center border-[1px] border-[#ffffff42]"
         >
           <img
@@ -152,18 +161,22 @@
 
   <section class="py-16 relative">
     <div class="container-xl mx-auto px-4">
-      <div class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14" data-aos="fade-up">
+      <div
+        class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14"
+        data-aos="fade-up"
+      >
         <h2 class="grad gradient-text text-center leading-none">
           ФОРМАТ МАРАФОНУ <br />ЭНЕРГІЇ ДУШІ
         </h2>
       </div>
       <div class="flex items-center justify-center">
-        <div  data-aos="fade-up"
+        <div
+          data-aos="fade-up"
           class="max-w-[300px] bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] border-[1px] border-[#ffffff42] text-white p-6 rounded-lg"
         >
           <div class="flex flex-row gap-4 relative">
             <div
-              class="absolute w-[5px] rounded-full bg-[red] h-[75%] left-[2.1%] top-[2%] bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F]"
+              class="absolute w-[5px] rounded-full bg-[red] h-[80%] left-[2.1%] top-[0%] bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F]"
             ></div>
 
             <ul class="text-[22px]">
@@ -175,10 +188,16 @@
               </li>
               <li class="text-before mb-4 leading-8" data-aos="fade-right">
                 <h3>
+                  Ви слухаєте
+                  <span class="text-primary font-bold">медитацію на вибір</span>
+                </h3>
+              </li>
+              <li class="text-before mb-4 leading-8" data-aos="fade-right">
+                <h3>
                   Ви приходите на першій вебінар:
                   <span class="text-primary font-bold"
-                    >«Карма і Доля: секрети душі які змінять твое життя»</span
-                  >
+                    >«Карма і Доля: секрети душі які змінити твоє життя»
+                  </span>
                 </h3>
               </li>
               <li class="text-before mb-4 leading-8" data-aos="fade-right">
@@ -192,9 +211,9 @@
               </li>
               <li class="text-before mb-4 leading-8" data-aos="fade-right">
                 <h3>
-                  Ви
-                  <span class="text-primary font-bold">насолоджуєтесь</span> від
-                  змін які відбуваються в Вашому житті
+                  Ви насолоджуєтесь
+                  <span class="text-primary font-bold">від змін які
+                  відбуваються</span> в Вашому житті
                 </h3>
               </li>
             </ul>
@@ -206,7 +225,10 @@
 
   <section class="py-16 relative">
     <div class="container-xl mx-auto px-4">
-      <div class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14" data-aos="fade-up">
+      <div
+        class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14"
+        data-aos="fade-up"
+      >
         <h2 class="grad gradient-text text-center leading-none">
           ЯКІ РЕЗУЛЬТАТИ ВИ ОТРИМУЄТЕ
           <br />ЗА 10 ДНІВ МАРАФОНУ?
@@ -219,7 +241,10 @@
         >
           <div class="flex flex-row gap-4 relative">
             <ul class="text-[22px] text-white">
-              <li class="mb-4 leading-8 flex flex-row gap-5 items-center" data-aos="fade-up">
+              <li
+                class="mb-4 leading-8 flex flex-row gap-5 items-center"
+                data-aos="fade-up"
+              >
                 <img
                   width="32"
                   height="32"
@@ -234,7 +259,10 @@
                   своєї душі
                 </h3>
               </li>
-              <li class="mb-4 leading-8 flex flex-row gap-5 items-center" data-aos="fade-up">
+              <li
+                class="mb-4 leading-8 flex flex-row gap-5 items-center"
+                data-aos="fade-up"
+              >
                 <img
                   width="32"
                   height="32"
@@ -246,7 +274,10 @@
                   енергетичних блоків
                 </h3>
               </li>
-              <li class="mb-4 leading-8 flex flex-row gap-5 items-center" data-aos="fade-up">
+              <li
+                class="mb-4 leading-8 flex flex-row gap-5 items-center"
+                data-aos="fade-up"
+              >
                 <img
                   width="32"
                   height="32"
@@ -259,7 +290,10 @@
                   кармічні впливи на своє життя
                 </h3>
               </li>
-              <li class="mb-4 leading-8 flex flex-row gap-5 items-center" data-aos="fade-up">
+              <li
+                class="mb-4 leading-8 flex flex-row gap-5 items-center"
+                data-aos="fade-up"
+              >
                 <img
                   width="32"
                   height="32"
@@ -272,7 +306,10 @@
                   своєї душі та життеву силу
                 </h3>
               </li>
-              <li class="mb-4 leading-8 flex flex-row gap-5 items-center" data-aos="fade-up">
+              <li
+                class="mb-4 leading-8 flex flex-row gap-5 items-center"
+                data-aos="fade-up"
+              >
                 <img
                   width="32"
                   height="32"
@@ -297,7 +334,10 @@
   <!-- PRICE -->
   <section id="price" class="py-16 relative overflow-hidden">
     <div class="container-xl mx-auto px-4">
-      <div class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14" data-aos="fade-up">
+      <div
+        class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14"
+        data-aos="fade-up"
+      >
         <h2 class="grad gradient-text text-center leading-none">
           ПРОПОНУЄМО ДВА ПАКЕТИ<br />
           УЧАСТІ
@@ -306,7 +346,8 @@
       <div class="w-fit mx-auto">
         <div class="flex justify-center gap-11 flex-col lg:flex-row">
           <div class="flex gap-11 flex-col md:flex-row">
-            <div data-aos="fade-right"
+            <div
+              data-aos="fade-right"
               class="relative max-w-[320px] bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] border-[1px] border-[#ffffff42] text-white p-6 rounded-lg"
             >
               <div class="flex flex-col justify-between h-full">
@@ -343,17 +384,19 @@
                   </li>
                 </ul>
                 <div class="text-center flex flex-col mt-12">
-                  <span class="text-4xl font-bold text-white">699</span>
+                  <span class="text-4xl font-bold text-white">701</span>
                 </div>
                 <div class="flex flex-col justify-center items-center mt-12">
                   <button
                     class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
                   >
-                    ОПЛАТИТЬ
+                    ОПЛАТИТИ
                   </button>
                 </div>
               </div>
-              <div class="absolute top-[-6%] right-[-19%] z-10 p-2 hue-rotate-custom">
+              <div
+                class="absolute top-[-6%] right-[-19%] z-10 p-2 hue-rotate-custom"
+              >
                 <span class="">
                   <img
                     width="128"
@@ -364,7 +407,8 @@
               </div>
             </div>
 
-            <div data-aos="fade-right"
+            <div
+              data-aos="fade-right"
               class="relative max-w-[320px] bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] border-[1px] border-[#ffffff42] p-6 rounded-lg text-white"
             >
               <div class="flex flex-col justify-between h-full">
@@ -372,61 +416,56 @@
                   VIP
                 </h2>
                 <ul class="list-decimal list-inside mb-4 text-[18px] flex-1">
-                  <li>
-                    Доступ до
-                    <span class="text-primary font-bold">марафону</span>
-                  </li>
-                  <li>
-                    Доступ до
-                    <span class="text-primary font-bold">п’яти медитацій</span>
-                    під час марафону
-                  </li>
-                  <li>
-                    Доступ в спільний чат
-                    <span class="text-primary font-bold">зі мною</span>
-                  </li>
-                  <li>
-                    Можливість
-                    <span class="text-primary font-bold">задати питання</span>
-                    та
-                    <span class="text-primary font-bold">отримати</span>
-                    відповідь
-                  </li>
-                  <li>
-                    <span class="text-primary font-bold">Два</span> вебінари
-                  </li>
-                  <li>
-                    Одна медитація (на вибір) в
-                    <span class="text-primary font-bold">постійний</span> доступ
-                  </li>
-                  <li>
-                    <span class="text-primary font-bold">5 медітацій</span> в
-                    доступ на завжди
-                  </li>
-                  <li>
-                    Вебінар з можливістю отримати особистий
-                    <span class="text-primary font-bold">розбір</span> та
-                    <span class="text-primary font-bold">все відповіді</span>
-                  </li>
+                    <li>
+                      Доступ до
+                      <span class="text-primary font-bold">марафону</span>
+                    </li>
+                    <li>
+                      Доступ до
+                      <span class="text-primary font-bold"
+                        >п’яти медитацій</span
+                      >
+                      під час марафону
+                    </li>
+                    <li>
+                      Доступ в спільний чат
+                      <span class="text-primary font-bold">зі мною</span>
+                    </li>
+                    <li>
+                      Можливість
+                      <span class="text-primary font-bold">задати питання</span>
+                      та
+                      <span class="text-primary font-bold">отримати</span>
+                      відповідь
+                    </li>
+                    <li>
+                      <span class="text-primary font-bold">Два</span> вебінари
+                    </li>
+                    <li>
+                      Одна медитація (на вибір) в
+                      <span class="text-primary font-bold">постійний</span>
+                      доступ
+                    </li>
+                    <li class="text-primary font-bold">5 медитацій в доступ назавжди</li>
+                    <li class="text-primary font-bold">Вебінар з можливістю отримати особистий розбір та відповіді на питання.</li>
+                    <li class="text-primary font-bold">VIP-чат зі мною з моім власним супроводом</li>
                 </ul>
                 <div class="text-center flex flex-col mt-12">
-                  <span class="text-4xl font-bold">1699</span>
+                  <span class="text-4xl font-bold">1901</span>
                 </div>
                 <div class="flex flex-col justify-center items-center mt-12">
                   <button
                     class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
                   >
-                    ОПЛАТИТЬ
+                    ОПЛАТИТИ
                   </button>
                 </div>
               </div>
-              <div class="absolute top-[-8%] right-[-19%] z-10 p-2 rotate-[13deg] hue-rotate-custom">
+              <div
+                class="absolute top-[-8%] right-[-19%] z-10 p-2 rotate-[13deg] hue-rotate-custom"
+              >
                 <span class="">
-                  <img
-                    width="128"
-                    src="@/assets/images/vip-price.png"
-                    alt=""
-                  />
+                  <img width="128" src="@/assets/images/vip-price.png" alt="" />
                 </span>
               </div>
             </div>

@@ -9,11 +9,11 @@
       <div class="mb-4 md:mb-0">
         <h3 class="text-lg font-bold">Ви можете зв'язатися зі мною</h3>
         <h3 class="text-lg font-bold mt-4">За телефоном</h3>
-        <p class="text-pink-500 hover:text-pink-300 text-left">
-          <a href="tel:+380674871110"></a>+380 67 487 11 10
+        <p class="hover:text-pink-300 text-left">
+          <a href="tel:+380674871110">+380 67 487 11 10</a>
         </p>
         <h3 class="text-lg font-bold mt-4">За електронною поштою</h3>
-        <p class="text-pink-500 hover:text-pink-300 text-left">
+        <p class="hover:text-pink-300 text-left">
           <a href="mailto:elenaoniua@gmail.com">elenaoniua@gmail.com</a>
         </p>
       </div>
@@ -23,25 +23,19 @@
         <h3 class="text-lg font-bold text-left">Інформація</h3>
         <ul>
           <li>
-            <a
-              href="#"
-              class="block mt-2 text-pink-500 hover:text-pink-300 text-left"
+            <NuxtLink :to="'/oferta-documents'" class="block mt-2 hover:text-pink-300 text-left"
               >ПУБЛІЧНИЙ ДОГОВІР (ОФЕРТА)<br />ПРО НАДАННЯ ІНФОРМАЦІЙНИХ
-              ПОСЛУГ</a
+              ПОСЛУГ</NuxtLink
             >
           </li>
           <li>
-            <a
-              href="#"
-              class="block mt-2 text-pink-500 hover:text-pink-300 text-left"
-              >Правила користування<br />Інформаційними послугами</a
+            <NuxtLink :to="'/usage-rules'" class="block mt-2 hover:text-pink-300 text-left"
+              >Правила користування<br />Інформаційними послугами</NuxtLink
             >
           </li>
           <li>
-            <a
-              href="#"
-              class="block mt-2 text-pink-500 hover:text-pink-300 text-left"
-              >Правила для учасників чату</a
+            <NuxtLink :to="'/chat-rules'" class="block mt-2 hover:text-pink-300 text-left"
+              >Правила для учасників чату</NuxtLink
             >
           </li>
         </ul>
@@ -51,9 +45,23 @@
       <div class="mb-4 md:mb-0 text-left">
         <h3 class="text-lg font-bold">Я у соціальних мережах</h3>
         <ul class="text-left">
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">YouTube</a></li>
+          <li>
+            <a href="https://t.me/neo_astrology" class="hover:text-pink-300"
+              >ДУША В ЕНЕРГІЇ</a
+            >
+          </li>
+          <li>
+            <a href="https://t.me/olenaonishchenko" class="hover:text-pink-300"
+              >Чат зі мною</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/lena__onishchenko__/#"
+              class="hover:text-pink-300"
+              >Instagram</a
+            >
+          </li>
         </ul>
       </div>
     </div>
