@@ -2,7 +2,7 @@
   <section>
     <div class="bg-hero-image pb-[1px]">
       <div class="mb-5">
-        <div data-aos="fade-zoom" class="max-w-[500px] mx-auto">
+        <div class="max-w-[500px] mx-auto">
           <div class="flex justify-end p-4">
             <h2
               class="bg-black bg-opacity-[32%] backdrop-blur-[25px] p-5 border-2 border-[#ffffff42] rounded-[8px] text-primary font-bold text-[32px]"
@@ -15,7 +15,6 @@
           <div class="container-2xl mx-auto pl-3 pr-3 mt-11">
             <div class="relative">
               <img
-                data-aos="fade-zoom"
                 class="hero-image mx-auto max-w-[100%]"
                 width="800"
                 src="@/assets/images/hero-image.png"
@@ -25,7 +24,6 @@
                 class="absolute h-auto w-full left-1/2 transform -translate-x-1/2 -bottom-[120px]"
               >
                 <div
-                  data-aos="flip-left"
                   class="max-w-[600px] mx-auto bg-black bg-opacity-[32%] backdrop-blur-[25px] p-5 rounded-[10px] border-2 border-[#80808045]"
                 >
                   <div class="text-left">
@@ -43,7 +41,7 @@
               </div>
             </div>
           </div>
-          <div class="mt-[150px]" style="z-index: 1" data-aos="fade-right">
+          <div class="mt-[150px]" style="z-index: 1">
             <NuxtLink :to="{ path: '/', hash: '#price' }">
               <button
                 class="font-[400] text-[#252525] text-[22px] mx-auto max-w-[100%] py-6 px-6 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-[30px]"
@@ -212,8 +210,10 @@
               <li class="text-before mb-4 leading-8" data-aos="fade-right">
                 <h3>
                   Ви насолоджуєтесь
-                  <span class="text-primary font-bold">від змін які
-                  відбуваються</span> в Вашому житті
+                  <span class="text-primary font-bold"
+                    >від змін які відбуваються</span
+                  >
+                  в Вашому житті
                 </h3>
               </li>
             </ul>
@@ -389,6 +389,7 @@
                 <div class="flex flex-col justify-center items-center mt-12">
                   <button
                     class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
+                    @click="openModal('ПАКЕТ ПОСЛУГ STANDART', '701')"
                   >
                     ОПЛАТИТИ
                   </button>
@@ -416,45 +417,51 @@
                   VIP
                 </h2>
                 <ul class="list-decimal list-inside mb-4 text-[18px] flex-1">
-                    <li>
-                      Доступ до
-                      <span class="text-primary font-bold">марафону</span>
-                    </li>
-                    <li>
-                      Доступ до
-                      <span class="text-primary font-bold"
-                        >п’яти медитацій</span
-                      >
-                      під час марафону
-                    </li>
-                    <li>
-                      Доступ в спільний чат
-                      <span class="text-primary font-bold">зі мною</span>
-                    </li>
-                    <li>
-                      Можливість
-                      <span class="text-primary font-bold">задати питання</span>
-                      та
-                      <span class="text-primary font-bold">отримати</span>
-                      відповідь
-                    </li>
-                    <li>
-                      <span class="text-primary font-bold">Два</span> вебінари
-                    </li>
-                    <li>
-                      Одна медитація (на вибір) в
-                      <span class="text-primary font-bold">постійний</span>
-                      доступ
-                    </li>
-                    <li class="text-primary font-bold">5 медитацій в доступ назавжди</li>
-                    <li class="text-primary font-bold">Вебінар з можливістю отримати особистий розбір та відповіді на питання.</li>
-                    <li class="text-primary font-bold">VIP-чат зі мною з моім власним супроводом</li>
+                  <li>
+                    Доступ до
+                    <span class="text-primary font-bold">марафону</span>
+                  </li>
+                  <li>
+                    Доступ до
+                    <span class="text-primary font-bold">п’яти медитацій</span>
+                    під час марафону
+                  </li>
+                  <li>
+                    Доступ в спільний чат
+                    <span class="text-primary font-bold">зі мною</span>
+                  </li>
+                  <li>
+                    Можливість
+                    <span class="text-primary font-bold">задати питання</span>
+                    та
+                    <span class="text-primary font-bold">отримати</span>
+                    відповідь
+                  </li>
+                  <li>
+                    <span class="text-primary font-bold">Два</span> вебінари
+                  </li>
+                  <li>
+                    Одна медитація (на вибір) в
+                    <span class="text-primary font-bold">постійний</span>
+                    доступ
+                  </li>
+                  <li class="text-primary font-bold">
+                    5 медитацій в доступ назавжди
+                  </li>
+                  <li class="text-primary font-bold">
+                    Вебінар з можливістю отримати особистий розбір та відповіді
+                    на питання.
+                  </li>
+                  <li class="text-primary font-bold">
+                    VIP-чат зі мною з моім власним супроводом
+                  </li>
                 </ul>
                 <div class="text-center flex flex-col mt-12">
                   <span class="text-4xl font-bold">1901</span>
                 </div>
                 <div class="flex flex-col justify-center items-center mt-12">
                   <button
+                    @click="openModal('ПАКЕТ ПОСЛУГ VIP', '1901')"
                     class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
                   >
                     ОПЛАТИТИ
@@ -474,7 +481,33 @@
       </div>
     </div>
   </section>
+
+  <payButton
+    v-if="isModalOpen"
+    :packageName="selectedPackage.packageName"
+    :amount="selectedPackage.amount"
+    @close="closeModal"
+  />
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const isModalOpen = ref(false)
+const selectedPackage = ref({
+  packageName: '',
+  amount: '',
+})
+
+const openModal = (packageName: string, amount: string) => {
+  selectedPackage.value = { packageName, amount }
+  isModalOpen.value = true
+}
+
+const closeModal = () => {
+  isModalOpen.value = false
+}
+</script>
 
 <style>
 .bg-hero-image {

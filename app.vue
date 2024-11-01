@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <div class="z-10 relative">
+    <div class="z-20 relative">
       <NuxtPage />
     </div>
     <div class="z-10 relative">

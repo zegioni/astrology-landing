@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] border-[1px] border-[#ffffff42] text-white"
+    class="z-10 bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] border-[1px] border-[#ffffff42] text-white"
   >
     <div
       class="p-4 max-w-[1200px] mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-4"
