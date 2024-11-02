@@ -387,12 +387,13 @@
                   <span class="text-4xl font-bold text-white">701</span>
                 </div>
                 <div class="flex flex-col justify-center items-center mt-12">
-                  <button
-                    class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
-                    @click="openModal('ПАКЕТ ПОСЛУГ STANDART', '701')"
-                  >
-                    ОПЛАТИТИ
-                  </button>
+                  <a href="https://pay.fondy.eu/s/xpMQP5Q">
+                    <button
+                      class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
+                    >
+                      ОПЛАТИТИ
+                    </button>
+                  </a>
                 </div>
               </div>
               <div
@@ -460,12 +461,13 @@
                   <span class="text-4xl font-bold">1901</span>
                 </div>
                 <div class="flex flex-col justify-center items-center mt-12">
-                  <button
-                    @click="openModal('ПАКЕТ ПОСЛУГ VIP', '1901')"
-                    class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
-                  >
-                    ОПЛАТИТИ
-                  </button>
+                  <a href="https://pay.fondy.eu/s/atTT3lLLhOfWreK">
+                    <button
+                      class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
+                    >
+                      ОПЛАТИТИ
+                    </button>
+                  </a>
                 </div>
               </div>
               <div
@@ -482,31 +484,31 @@
     </div>
   </section>
 
-  <payButton
+  <!-- <payButton
     v-if="isModalOpen"
     :packageName="selectedPackage.packageName"
     :amount="selectedPackage.amount"
     @close="closeModal"
-  />
+  /> -->
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+// import { ref } from 'vue'
 
-const isModalOpen = ref(false)
-const selectedPackage = ref({
-  packageName: '',
-  amount: '',
-})
+// const isModalOpen = ref(false)
+// const selectedPackage = ref({
+//   packageName: '',
+//   amount: '',
+// })
 
-const openModal = (packageName: string, amount: string) => {
-  selectedPackage.value = { packageName, amount }
-  isModalOpen.value = true
-}
+// const openModal = (packageName: string, amount: string) => {
+//   selectedPackage.value = { packageName, amount }
+//   isModalOpen.value = true
+// }
 
-const closeModal = () => {
-  isModalOpen.value = false
-}
+// const closeModal = () => {
+//   isModalOpen.value = false
+// }
 </script>
 
 <style>

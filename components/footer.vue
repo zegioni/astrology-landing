@@ -23,18 +23,24 @@
         <h3 class="text-lg font-bold text-left">Інформація</h3>
         <ul>
           <li>
-            <NuxtLink :to="'/oferta-documents'" class="block mt-2 hover:text-pink-300 text-left"
+            <NuxtLink
+              :to="'/oferta-documents'"
+              class="block mt-2 hover:text-pink-300 text-left"
               >ПУБЛІЧНИЙ ДОГОВІР (ОФЕРТА)<br />ПРО НАДАННЯ ІНФОРМАЦІЙНИХ
               ПОСЛУГ</NuxtLink
             >
           </li>
           <li>
-            <NuxtLink :to="'/usage-rules'" class="block mt-2 hover:text-pink-300 text-left"
+            <NuxtLink
+              :to="'/usage-rules'"
+              class="block mt-2 hover:text-pink-300 text-left"
               >Правила користування<br />Інформаційними послугами</NuxtLink
             >
           </li>
           <li>
-            <NuxtLink :to="'/chat-rules'" class="block mt-2 hover:text-pink-300 text-left"
+            <NuxtLink
+              :to="'/chat-rules'"
+              class="block mt-2 hover:text-pink-300 text-left"
               >Правила для учасників чату</NuxtLink
             >
           </li>
@@ -42,7 +48,7 @@
       </div>
 
       <!-- Social -->
-      <div class="mb-4 md:mb-0 text-left">
+      <div class="mb-4 md:mb-0 text-left flex flex-col justify-between">
         <h3 class="text-lg font-bold">Я у соціальних мережах</h3>
         <ul class="text-left">
           <li>
@@ -61,6 +67,14 @@
               class="hover:text-pink-300"
               >Instagram</a
             >
+          </li>
+        </ul>
+        <ul class="text-left flex flex-row justify-center md:justify-start">
+          <li>
+            <img width="100" src="@/assets/images/mastercard.svg" alt="" />
+          </li>
+          <li>
+            <img width="100" src="@/assets/images/visa.svg" alt="" />
           </li>
         </ul>
       </div>
