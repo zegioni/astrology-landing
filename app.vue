@@ -1,27 +1,45 @@
 <template>
-  <NuxtLayout>
-    <div class="z-20 relative">
-      <NuxtPage />
-    </div>
-    <div class="z-10 relative">
-      <Footer />
-    </div>
-  </NuxtLayout>
+  <div v-if="!loading">
+    <NuxtLayout data-aos="fade-right" data-aos-duration="1000">
+      <div class="z-20 relative">
+        <NuxtPage />
+      </div>
+      <div class="z-10 relative">
+        <Footer />
+      </div>
+    </NuxtLayout>
+  </div>
+  <div v-else>
+    <ClientOnly>
+      <div class="loading-screen">
+        <PlanetAnimation />
+      </div>
+    </ClientOnly>
+  </div>
 </template>
 
 <script setup>
 import Footer from '@/components/footer.vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import PlanetAnimation from '@/components/planetAnimation.vue'
+
+const loading = ref(true)
 
 onMounted(async () => {
   await nextTick()
   AOS.init()
+  setTimeout(() => {
+    loading.value = false
+  }, 2500)
 })
 
 onUpdated(async () => {
   await nextTick()
   AOS.refresh()
+  setTimeout(() => {
+    loading.value = false
+  }, 2000)
 })
 </script>
 
@@ -53,5 +71,14 @@ body::before {
   background-size: contain;
   opacity: 0.6;
   z-index: 0;
+}
+
+.loading-screen {
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 10000;
 }
 </style>
