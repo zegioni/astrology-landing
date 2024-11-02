@@ -1,6 +1,6 @@
 <template>
   <div v-if="!loading">
-    <NuxtLayout data-aos="fade-right" data-aos-duration="1000">
+    <NuxtLayout>
       <div class="z-20 relative">
         <NuxtPage />
       </div>
