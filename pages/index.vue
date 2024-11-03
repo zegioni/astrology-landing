@@ -77,6 +77,7 @@
             class="max-w-[100%]"
             src="@/assets/images/memoji-astrology-girl-make-natal-map.png"
             alt=""
+            loading="lazy"
           />
           <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
           <p class="text-white text-[16px]">
@@ -91,6 +92,7 @@
             class="max-w-[100%]"
             src="@/assets/images/memoji-astrology-wheel.png"
             alt=""
+            loading="lazy"
           />
           <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
           <p class="text-white text-[16px]">
@@ -103,8 +105,9 @@
         >
           <img
             class="max-w-[100%]"
-            src="@/assets/images/memoji-man.png.png"
+            src="@/assets/images/memoji-man.png"
             alt=""
+            loading="lazy"
           />
           <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
           <p class="text-white text-[16px]">
@@ -119,6 +122,7 @@
             class="max-w-[100%]"
             src="@/assets/images/memoji-moon.png"
             alt=""
+            loading="lazy"
           />
           <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
           <p class="text-white text-[16px]">
@@ -133,6 +137,7 @@
             class="max-w-[100%]"
             src="@/assets/images/memoji-spiritual.png"
             alt=""
+            loading="lazy"
           />
           <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
           <p class="text-white text-[16px]">
@@ -147,6 +152,7 @@
             class="max-w-[100%]"
             src="@/assets/images/memoji-mystical-moon.png "
             alt=""
+            loading="lazy"
           />
           <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
           <p class="text-white text-[16px]">
@@ -250,6 +256,7 @@
                   height="32"
                   src="@/assets/images/pink-checkbox-64.png"
                   alt=""
+                  loading="lazy"
                 />
                 <h3>
                   Ви розкриєте
@@ -268,6 +275,7 @@
                   height="32"
                   src="@/assets/images/pink-checkbox-64.png"
                   alt=""
+                  loading="lazy"
                 />
                 <h3>
                   Ви <span class="text-primary font-bold">звільнитеся</span> від
@@ -283,6 +291,7 @@
                   height="32"
                   src="@/assets/images/pink-checkbox-64.png"
                   alt=""
+                  loading="lazy"
                 />
                 <h3>
                   Ви
@@ -299,6 +308,7 @@
                   height="32"
                   src="@/assets/images/pink-checkbox-64.png"
                   alt=""
+                  loading="lazy"
                 />
                 <h3>
                   Ви
@@ -315,6 +325,7 @@
                   height="32"
                   src="@/assets/images/pink-checkbox-64.png"
                   alt=""
+                  loading="lazy"
                 />
                 <h3>
                   Ви
@@ -404,6 +415,7 @@
                     width="128"
                     src="@/assets/images/standard-price.png"
                     alt=""
+                    loading="lazy"
                   />
                 </span>
               </div>
@@ -474,7 +486,7 @@
                 class="absolute top-[-8%] right-[-19%] z-10 p-2 rotate-[13deg] hue-rotate-custom"
               >
                 <span class="">
-                  <img width="128" src="@/assets/images/vip-price.png" alt="" />
+                  <img width="128" src="@/assets/images/vip-price.png" alt="" loading="lazy"/>
                 </span>
               </div>
             </div>
@@ -543,6 +555,8 @@ onUpdated(async () => {
 }
 
 .hero-image {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 100px;
   filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.31))
     drop-shadow(0 0 30px rgba(255, 255, 255, 0.295));
 }
