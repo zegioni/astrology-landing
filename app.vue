@@ -22,8 +22,6 @@
 
 <script setup>
 import Footer from '@/components/footer.vue'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 import PlanetAnimation from '@/components/planetAnimation.vue'
 import background from '@/assets/images/background.jpg'
 import heroImage from '@/assets/images/hero-image.png'
@@ -79,22 +77,16 @@ const preloadImages = () => {
 };
 
 onMounted(async () => {
-  await nextTick()
-  setThemeColor('#191934');
-  await preloadImages();
-  AOS.init()
   setTimeout(() => {
     setThemeColor('rgba(92, 38, 76)');
     loading.value = false
-  }, 2500)
+  }, 2499)
 })
 
 onUpdated(async () => {
-  await nextTick()
-  AOS.refresh()
   setTimeout(() => {
     loading.value = false
-  }, 2000)
+  }, 2499)
 })
 </script>
 

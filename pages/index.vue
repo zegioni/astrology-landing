@@ -505,6 +505,18 @@
 </template>
 
 <script setup lang="ts">
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+onMounted(async () => {
+  setTimeout(() => {
+    AOS.init()
+  }, 1000)
+})
+
+onUpdated(async () => {
+  AOS.refreshHard()
+})
 // import { ref } from 'vue'
 
 // const isModalOpen = ref(false)
