@@ -90,6 +90,8 @@ onMounted(() => {
 
   // Функция для рисования на холсте
   function draw() {
+    if (!canvas.value) return
+    
     const w = canvas.value.width
     const h = canvas.value.height
 

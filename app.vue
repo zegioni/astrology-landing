@@ -20,26 +20,20 @@
 
 <script setup>
 import Footer from '@/components/footer.vue'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 import PlanetAnimation from '@/components/planetAnimation.vue'
 
 const loading = ref(true)
 
 onMounted(async () => {
-  await nextTick()
-  AOS.init()
   setTimeout(() => {
     loading.value = false
-  }, 2500)
+  }, 2499)
 })
 
 onUpdated(async () => {
-  await nextTick()
-  AOS.refresh()
   setTimeout(() => {
     loading.value = false
-  }, 2000)
+  }, 2499)
 })
 </script>
 
