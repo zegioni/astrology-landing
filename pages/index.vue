@@ -398,13 +398,12 @@
                   <span class="text-4xl font-bold text-white">701</span>
                 </div>
                 <div class="flex flex-col justify-center items-center mt-12">
-                  <a href="https://pay.fondy.eu/s/xpMQP5Q">
-                    <button
-                      class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
-                    >
-                      ОПЛАТИТИ
-                    </button>
-                  </a>
+                  <button
+                    @click="openModal('ПАКЕТ ПОСЛУГ STANDART', '701')"
+                    class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
+                  >
+                    ОПЛАТИТИ
+                  </button>
                 </div>
               </div>
               <div
@@ -473,20 +472,24 @@
                   <span class="text-4xl font-bold">1901</span>
                 </div>
                 <div class="flex flex-col justify-center items-center mt-12">
-                  <a href="https://pay.fondy.eu/s/atTT3lLLhOfWreK">
-                    <button
-                      class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
-                    >
-                      ОПЛАТИТИ
-                    </button>
-                  </a>
+                  <button
+                    @click="openModal('ПАКЕТ ПОСЛУГ VIP', '1901')"
+                    class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
+                  >
+                    ОПЛАТИТИ
+                  </button>
                 </div>
               </div>
               <div
                 class="absolute top-[-8%] right-[-19%] z-10 p-2 rotate-[13deg] hue-rotate-custom"
               >
                 <span class="">
-                  <img width="128" src="@/assets/images/vip-price.png" alt="" loading="lazy"/>
+                  <img
+                    width="128"
+                    src="@/assets/images/vip-price.png"
+                    alt=""
+                    loading="lazy"
+                  />
                 </span>
               </div>
             </div>
@@ -496,12 +499,12 @@
     </div>
   </section>
 
-  <!-- <payButton
+  <payButton
     v-if="isModalOpen"
     :packageName="selectedPackage.packageName"
     :amount="selectedPackage.amount"
     @close="closeModal"
-  /> -->
+  />
 </template>
 
 <script setup lang="ts">
@@ -517,22 +520,22 @@ onMounted(async () => {
 onUpdated(async () => {
   AOS.refreshHard()
 })
-// import { ref } from 'vue'
+import { ref } from 'vue'
 
-// const isModalOpen = ref(false)
-// const selectedPackage = ref({
-//   packageName: '',
-//   amount: '',
-// })
+const isModalOpen = ref(false)
+const selectedPackage = ref({
+  packageName: '',
+  amount: '',
+})
 
-// const openModal = (packageName: string, amount: string) => {
-//   selectedPackage.value = { packageName, amount }
-//   isModalOpen.value = true
-// }
+const openModal = (packageName: string, amount: string) => {
+  selectedPackage.value = { packageName, amount }
+  isModalOpen.value = true
+}
 
-// const closeModal = () => {
-//   isModalOpen.value = false
-// }
+const closeModal = () => {
+  isModalOpen.value = false
+}
 </script>
 
 <style>
