@@ -1,4 +1,5 @@
 import HmacMD5 from 'crypto-js/hmac-md5'
+import { useRuntimeConfig } from '#imports'
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
