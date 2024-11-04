@@ -8,6 +8,10 @@
 import { onMounted, onUnmounted, defineProps, defineEmits } from 'vue'
 import HmacMD5 from 'crypto-js/hmac-md5'
 
+const { MERCHANT_ACCOUNT } = useRuntimeConfig().public;
+const { MERCHANT_DOMAIN_NAME } = useRuntimeConfig().public;
+const { SECRET_KEY } = useRuntimeConfig().public;
+
 declare global {
   interface Window {
     Wayforpay: any
@@ -62,9 +66,9 @@ onMounted(() => {
   script.onload = () => {
     console.log('Wayforpay script loaded')
 
-    const merchantAccount = 'freelance_user_6712455d4348e'
-    const merchantDomainName = 'www.market.ua'
-    const secretKey = '51de9d953f8dab2e836d98f0e7386d0bb392a545'
+    const merchantAccount = MERCHANT_ACCOUNT
+    const merchantDomainName = MERCHANT_DOMAIN_NAME
+    const secretKey = SECRET_KEY
     const randomDigits = Math.floor(100000 + Math.random() * 900000).toString()
 
     const orderReference = `NEO${randomDigits}`
