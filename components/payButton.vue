@@ -6,11 +6,10 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, defineProps, defineEmits } from 'vue'
-import HmacMD5 from 'crypto-js/hmac-md5'
+import { useRuntimeConfig } from '#imports'
 
-const { MERCHANT_ACCOUNT } = useRuntimeConfig().public;
-const { MERCHANT_DOMAIN_NAME } = useRuntimeConfig().public;
-const { SECRET_KEY } = useRuntimeConfig().public;
+const { MERCHANT_ACCOUNT } = useRuntimeConfig().public
+const { MERCHANT_DOMAIN_NAME } = useRuntimeConfig().public
 
 declare global {
   interface Window {
@@ -63,12 +62,11 @@ onMounted(() => {
   script.type = 'text/javascript'
   script.async = true
 
-  script.onload = () => {
+  script.onload = async () => {
     console.log('Wayforpay script loaded')
 
     const merchantAccount = MERCHANT_ACCOUNT
     const merchantDomainName = MERCHANT_DOMAIN_NAME
-    const secretKey = SECRET_KEY
     const randomDigits = Math.floor(100000 + Math.random() * 900000).toString()
 
     const orderReference = `NEO${randomDigits}`
@@ -79,23 +77,22 @@ onMounted(() => {
     const productPrice = [props.amount]
     const productCount = ['1']
 
-    const generateSignature = () => {
-      const signString = [
+    const response = await $fetch('/api/generateSignature', {
+      method: 'POST',
+      body: {
         merchantAccount,
         merchantDomainName,
         orderReference,
         orderDate,
         amount,
         currency,
-        ...productName,
-        ...productCount,
-        ...productPrice,
-      ].join(';')
+        productName,
+        productPrice,
+        productCount,
+      },
+    })
 
-      return HmacMD5(signString, secretKey)
-    }
-
-    const merchantSignature = generateSignature()
+    const merchantSignature = response.signature
 
     const wayforpay = new window.Wayforpay()
     wayforpay.run(

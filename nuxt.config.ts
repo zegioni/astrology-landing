@@ -3,6 +3,8 @@ export default defineNuxtConfig({
     public: {
       MERCHANT_ACCOUNT: process.env.MERCHANT_ACCOUNT,
       MERCHANT_DOMAIN_NAME: process.env.MERCHANT_DOMAIN_NAME,
+    },
+    private: {
       SECRET_KEY: process.env.SECRET_KEY,
     },
   },
