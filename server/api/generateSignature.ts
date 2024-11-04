@@ -1,10 +1,14 @@
-import HmacMD5 from 'crypto-js/hmac-md5'
 import { useRuntimeConfig } from '#imports'
+
+// Используем require для импорта crypto-js
+import CryptoJS from 'crypto-js'
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
-  console.log('SECRET_KEY:', config.private.SECRET_KEY) // Временный лог для проверки
   const body = await readBody(event)
+
+  console.log('Received body:', body)
+  console.log('SECRET_KEY:', config.private.SECRET_KEY)
 
   const {
     merchantAccount,
@@ -33,7 +37,10 @@ export default defineEventHandler(async (event) => {
   console.log('Sign string:', signString)
 
   try {
-    const signature = HmacMD5(signString, config.private.SECRET_KEY).toString()
+    const signature = CryptoJS.HmacMD5(
+      signString,
+      config.private.SECRET_KEY,
+    ).toString()
     console.log('Generated signature:', signature)
     return { signature }
   } catch (error) {
