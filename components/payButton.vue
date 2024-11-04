@@ -77,54 +77,58 @@ onMounted(() => {
     const productPrice = [props.amount]
     const productCount = ['1']
 
-    const response = await $fetch('/api/generateSignature', {
-      method: 'POST',
-      body: {
-        merchantAccount,
-        merchantDomainName,
-        orderReference,
-        orderDate,
-        amount,
-        currency,
-        productName,
-        productPrice,
-        productCount,
-      },
-    })
+    try {
+      const response = await $fetch('/api/generateSignature', {
+        method: 'POST',
+        body: {
+          merchantAccount,
+          merchantDomainName,
+          orderReference,
+          orderDate,
+          amount,
+          currency,
+          productName,
+          productPrice,
+          productCount,
+        },
+      })
 
-    const merchantSignature = response.signature
+      const merchantSignature = response.signature
 
-    const wayforpay = new window.Wayforpay()
-    wayforpay.run(
-      {
-        merchantAccount: merchantAccount,
-        merchantDomainName: merchantDomainName,
-        authorizationType: 'SimpleSignature',
-        merchantSignature: merchantSignature,
-        orderReference: orderReference,
-        orderDate: orderDate,
-        amount: amount,
-        currency: currency,
-        productName: productName[0],
-        productPrice: productPrice[0],
-        productCount: productCount[0],
-        clientFirstName: '',
-        clientLastName: '',
-        clientEmail: '',
-        clientPhone: '',
-        language: 'UA',
-        straightWidget: true,
-      },
-      function (response: WayforpayResponse) {
-        window.postMessage('WfpWidgetEventApproved', '*')
-      },
-      function (response: WayforpayResponse) {
-        window.postMessage('WfpWidgetEventDeclined', '*')
-      },
-      function (response: WayforpayResponse) {
-        window.postMessage('WfpWidgetEventPending', '*')
-      },
-    )
+      const wayforpay = new window.Wayforpay()
+      wayforpay.run(
+        {
+          merchantAccount: merchantAccount,
+          merchantDomainName: merchantDomainName,
+          authorizationType: 'SimpleSignature',
+          merchantSignature: merchantSignature,
+          orderReference: orderReference,
+          orderDate: orderDate,
+          amount: amount,
+          currency: currency,
+          productName: productName[0],
+          productPrice: productPrice[0],
+          productCount: productCount[0],
+          clientFirstName: '',
+          clientLastName: '',
+          clientEmail: '',
+          clientPhone: '',
+          language: 'UA',
+          straightWidget: true,
+        },
+        function (response: WayforpayResponse) {
+          window.postMessage('WfpWidgetEventApproved', '*')
+        },
+        function (response: WayforpayResponse) {
+          window.postMessage('WfpWidgetEventDeclined', '*')
+        },
+        function (response: WayforpayResponse) {
+          window.postMessage('WfpWidgetEventPending', '*')
+        },
+      )
+    } catch (error) {
+      console.error('Error fetching signature:', error)
+    }
   }
 
   document.body.appendChild(script)

@@ -3,6 +3,7 @@ import { useRuntimeConfig } from '#imports'
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
+  console.log('SECRET_KEY:', config.private.SECRET_KEY) // Временный лог для проверки
   const body = await readBody(event)
 
   const {
@@ -29,7 +30,14 @@ export default defineEventHandler(async (event) => {
     ...productPrice,
   ].join(';')
 
-  const signature = HmacMD5(signString, config.private.SECRET_KEY).toString()
+  console.log('Sign string:', signString)
 
-  return { signature }
+  try {
+    const signature = HmacMD5(signString, config.private.SECRET_KEY).toString()
+    console.log('Generated signature:', signature)
+    return { signature }
+  } catch (error) {
+    console.error('Error generating signature:', error)
+    throw error
+  }
 })
