@@ -1,4 +1,10 @@
 <template>
+  <CustomToast
+    v-if="toast.visible"
+    :title="toast.title"
+    :message="toast.message"
+    :type="toast.type"
+  />
   <section>
     <div class="bg-hero-image pb-[1px]">
       <div class="mb-5">
@@ -395,15 +401,14 @@
                   </li>
                 </ul>
                 <div class="text-center flex flex-col mt-12">
-                  <span class="text-4xl font-bold text-white">701</span>
+                  <span class="text-4xl font-bold text-white">701 грн.</span>
                 </div>
                 <div class="flex flex-col justify-center items-center mt-12">
-                  <button
-                    @click="openModal('ПАКЕТ ПОСЛУГ STANDART', '701')"
+                  <PaymentButton
                     class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
-                  >
-                    ОПЛАТИТИ
-                  </button>
+                    :productName="'Пакет послуг STANDARD'"
+                    :productPrice="701"
+                  />
                 </div>
               </div>
               <div
@@ -469,15 +474,14 @@
                   </li>
                 </ul>
                 <div class="text-center flex flex-col mt-12">
-                  <span class="text-4xl font-bold">1901</span>
+                  <span class="text-4xl font-bold">1901 грн.</span>
                 </div>
                 <div class="flex flex-col justify-center items-center mt-12">
-                  <button
-                    @click="openModal('ПАКЕТ ПОСЛУГ VIP', '1901')"
+                  <PaymentButton
                     class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
-                  >
-                    ОПЛАТИТИ
-                  </button>
+                    :productName="'Пакет послуг VIP'"
+                    :productPrice="1901"
+                  />
                 </div>
               </div>
               <div
@@ -498,44 +502,78 @@
       </div>
     </div>
   </section>
-
-  <payButton
-    v-if="isModalOpen"
-    :packageName="selectedPackage.packageName"
-    :amount="selectedPackage.amount"
-    @close="closeModal"
-  />
 </template>
 
-<script setup lang="ts">
+<script setup>
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { onMounted } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
+import { useCookies } from '@vueuse/integrations/useCookies'
+import PaymentButton from '@/components/paymentButton.vue'
 
-onMounted(async () => {
+const route = useRoute()
+const router = useRouter()
+const cookies = useCookies()
+
+const toast = ref({
+  visible: false,
+  title: '',
+  message: '',
+  type: 'info',
+})
+
+const showToast = (title, message, type = 'info') => {
+  toast.value = { visible: true, title, message, type }
+  setTimeout(() => {
+    toast.value.visible = false
+  }, 3000)
+}
+
+const checkPaymentStatus = async () => {
+  const invoiceId = cookies.get('invoiceId')
+  if (!invoiceId) return
+
+  try {
+    const response = await $fetch('/api/check-invoice-status', {
+      method: 'GET',
+      query: {
+        invoiceId,
+      },
+    })
+
+    if (response.status === 'success') {
+      showToast(
+        'Оплата успішна',
+        'Ваш платіж був успішно оброблений.',
+        'success',
+      )
+    } else {
+      showToast(
+        'Оплата не вдалася',
+        'Сталася помилка під час обробки вашого платежу.',
+        'error',
+      )
+    }
+
+    cookies.remove('invoiceId')
+  } catch (error) {
+    console.error('Ошибка при проверке статуса счета:', error)
+  }
+}
+
+onMounted(() => {
+  if (route.query['check-pay']) {
+    checkPaymentStatus()
+    router.replace({ query: null })
+  }
   setTimeout(() => {
     AOS.init()
   }, 1000)
 })
-
 onUpdated(async () => {
   AOS.refreshHard()
 })
-import { ref } from 'vue'
-
-const isModalOpen = ref(false)
-const selectedPackage = ref({
-  packageName: '',
-  amount: '',
-})
-
-const openModal = (packageName: string, amount: string) => {
-  selectedPackage.value = { packageName, amount }
-  isModalOpen.value = true
-}
-
-const closeModal = () => {
-  isModalOpen.value = false
-}
 </script>
 
 <style>
