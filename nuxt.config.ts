@@ -1,11 +1,7 @@
 export default defineNuxtConfig({
   runtimeConfig: {
-    public: {
-      MERCHANT_ACCOUNT: process.env.MERCHANT_ACCOUNT,
-      MERCHANT_DOMAIN_NAME: process.env.MERCHANT_DOMAIN_NAME,
-    },
     private: {
-      SECRET_KEY: process.env.SECRET_KEY,
+      MONOBANK_API_KEY: process.env.MONOBANK_API_KEY,
     },
   },
   compatibilityDate: '2024-04-03',
@@ -74,7 +70,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ['@pinia/nuxt'],
+  modules: ['@pinia/nuxt', '@vueuse/nuxt'],
   plugins: ['~/plugins/scroll.ts'],
   pinia: {
     storesDirs: ['./stores/**'],
