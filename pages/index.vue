@@ -8,7 +8,7 @@
   <section>
     <div class="bg-hero-image pb-[1px]">
       <div class="mb-5">
-        <div class="max-w-[500px] mx-auto">
+        <!-- <div class="max-w-[500px] mx-auto">
           <div class="flex justify-end p-4">
             <h2
               class="bg-black bg-opacity-[32%] backdrop-blur-[25px] p-5 border-2 border-[#ffffff42] rounded-[8px] text-primary font-bold text-[32px]"
@@ -16,7 +16,7 @@
               СТАРТ 10.11
             </h2>
           </div>
-        </div>
+        </div> -->
         <div class="flex flex-col items-center">
           <div class="container-2xl mx-auto pl-3 pr-3 mt-11">
             <div class="relative">
@@ -502,6 +502,27 @@
       </div>
     </div>
   </section>
+
+  <section class="py-16 relative">
+    <div class="container-xl mx-auto px-4">
+      <div
+        class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14"
+        data-aos="fade-up"
+      >
+        <h2 class="grad gradient-text text-center leading-none">ВІДГУКИ</h2>
+      </div>
+      <Carousel v-bind="config">
+        <Slide v-for="(image, index) in images" :key="index">
+          <div class="carousel__item">
+            <img :src="image" alt="Image"/>
+          </div>
+        </Slide>
+        <template #addons>
+          <Navigation />
+        </template>
+      </Carousel>
+    </div>
+  </section>
 </template>
 
 <script setup>
@@ -511,6 +532,47 @@ import { onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useCookies } from '@vueuse/integrations/useCookies'
 import PaymentButton from '@/components/paymentButton.vue'
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Navigation } from 'vue3-carousel'
+import img1 from '@/assets/images/vidguk/photo_1_2024-11-12_10-45-42.jpg'
+import img2 from '@/assets/images/vidguk/photo_2_2024-11-12_10-45-42.jpg'
+import img3 from '@/assets/images/vidguk/photo_3_2024-11-12_10-45-42.jpg'
+import img4 from '@/assets/images/vidguk/photo_4_2024-11-12_10-45-42.jpg'
+import img5 from '@/assets/images/vidguk/photo_5_2024-11-12_10-45-42.jpg'
+import img6 from '@/assets/images/vidguk/photo_6_2024-11-12_10-45-42.jpg'
+import img7 from '@/assets/images/vidguk/photo_7_2024-11-12_10-45-42.jpg'
+import img8 from '@/assets/images/vidguk/photo_8_2024-11-12_10-45-42.jpg'
+import img9 from '@/assets/images/vidguk/photo_9_2024-11-12_10-45-42.jpg'
+import img10 from '@/assets/images/vidguk/photo_10_2024-11-12_10-45-42.jpg'
+
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10]
+
+const config = {
+  itemsToShow: 1,
+  wrapAround: true,
+  transition: 300,
+  mouseDrag: true,
+  touchDrag: true,
+  snapAlign: 'center',
+  breakpointMode: 'viewport',
+  breakpoints: {
+    // 300px and up
+    300: {
+      itemsToShow: 1.5,
+      snapAlign: 'center',
+    },
+    // 400px and up
+    400: {
+      itemsToShow: 3,
+      snapAlign: 'center',
+    },
+    // 500px and up
+    500: {
+      itemsToShow: 4,
+      snapAlign: 'center',
+    },
+  },
+}
 
 const route = useRoute()
 const router = useRouter()
@@ -577,6 +639,46 @@ onUpdated(async () => {
 </script>
 
 <style>
+.carousel__item {
+  padding: 5px;
+}
+
+.carousel__viewport {
+  perspective: 2000px;
+}
+
+.carousel__track {
+  transform-style: preserve-3d;
+}
+
+.carousel__slide--sliding {
+  transition: 0.5s;
+}
+
+.carousel__slide {
+  opacity: 0.9;
+  transform: rotateY(-20deg) scale(0.9);
+}
+
+.carousel__slide--active ~ .carousel__slide {
+  transform: rotateY(20deg) scale(0.9);
+}
+
+.carousel__slide--prev {
+  opacity: 1;
+  transform: rotateY(-10deg) scale(0.95);
+}
+
+.carousel__slide.carousel__slide--next {
+  opacity: 1;
+  transform: rotateY(10deg) scale(0.95);
+}
+
+.carousel__slide--active {
+  opacity: 1;
+  transform: rotateY(0) scale(1);
+}
+
 .bg-hero-image {
   position: relative;
 }
