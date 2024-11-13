@@ -37,7 +37,7 @@
                       <span class="font-[200]">МАРАФОН</span>
                       <br />
                       <span class="text-primary font-bold text-[32px]">
-                        ЗЦІЛЕННЯ ДУШІ: СИЛА КАРМИ ТА ЄНЕРГІЇ
+                        ЗЦІЛЕННЯ ДУШІ: СИЛА КАРМИ ТА ЕНЕРГІЇ
                       </span>
                       <br />
                       <span class="font-[200]">ОЛЕНА ОНІЩЕНКО</span>
@@ -68,7 +68,7 @@
         data-aos="fade-up"
       >
         <h2 class="grad gradient-text text-center leading-none">
-          ДЛЯ КОГО МАРАФОН <br />ЭНЕРГІЇ ДУШІ
+          ДЛЯ КОГО МАРАФОН <br />ЕНЕРГІЇ ДУШІ
         </h2>
       </div>
 
@@ -176,7 +176,7 @@
         data-aos="fade-up"
       >
         <h2 class="grad gradient-text text-center leading-none">
-          ФОРМАТ МАРАФОНУ <br />ЭНЕРГІЇ ДУШІ
+          ФОРМАТ МАРАФОНУ <br />ЕНЕРГІЇ ДУШІ
         </h2>
       </div>
       <div class="flex items-center justify-center">
@@ -558,17 +558,17 @@ const config = {
   breakpoints: {
     // 300px and up
     300: {
-      itemsToShow: 1.5,
+      itemsToShow: 1.2,
       snapAlign: 'center',
     },
     // 400px and up
     400: {
-      itemsToShow: 3,
+      itemsToShow: 1.2,
       snapAlign: 'center',
     },
     // 500px and up
     500: {
-      itemsToShow: 4,
+      itemsToShow: 1.2,
       snapAlign: 'center',
     },
   },
