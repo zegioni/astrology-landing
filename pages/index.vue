@@ -34,10 +34,10 @@
                 >
                   <div class="text-left">
                     <h2 class="text-white text-[22px]">
-                      <span class="font-[200]">МАРАФОН</span>
+                      <span class="font-[200]">Продажі на максимум:</span>
                       <br />
                       <span class="text-primary font-bold text-[32px]">
-                        ЗЦІЛЕННЯ ДУШІ: СИЛА КАРМИ ТА ЕНЕРГІЇ
+                        ЗАПУСКАЙ, ЗАРОБЛЯЙ, МАСШТАБУЙСЯ
                       </span>
                       <br />
                       <span class="font-[200]">ОЛЕНА ОНІЩЕНКО</span>
@@ -50,9 +50,9 @@
           <div class="mt-[150px]" style="z-index: 1">
             <NuxtLink :to="{ path: '/', hash: '#price' }">
               <button
-                class="font-[400] text-[#252525] text-[22px] mx-auto max-w-[100%] py-6 px-6 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-[30px]"
+                class="font-[400] text-[#252525] text-[22px] mx-auto w-[220px] py-6 px-6 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-[30px]"
               >
-                ХОЧУ НА МАРАФОН
+                ХОЧУ
               </button>
             </NuxtLink>
           </div>
@@ -68,7 +68,7 @@
         data-aos="fade-up"
       >
         <h2 class="grad gradient-text text-center leading-none">
-          ДЛЯ КОГО МАРАФОН <br />ЕНЕРГІЇ ДУШІ
+          ДЛЯ КОГО <br />ЕНЕРГІЇ ДУШІ
         </h2>
       </div>
 
@@ -85,10 +85,8 @@
             alt=""
             loading="lazy"
           />
-          <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
-          <p class="text-white text-[16px]">
-            Ви хочите знайти баланс між духовним та матеріальним
-          </p>
+          <h3 class="text-primary text-[18px] font-[800]">Для тих</h3>
+          <p class="text-white text-[16px]">Хто сумнівається у своїх силах</p>
         </div>
         <div
           data-aos="fade-up"
@@ -100,9 +98,9 @@
             alt=""
             loading="lazy"
           />
-          <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
+          <h3 class="text-primary text-[18px] font-[800]">Для тих</h3>
           <p class="text-white text-[16px]">
-            Ви відчуваєте, що щось заважає жити повноцінно
+            Хто вважає, що продажі — це не для них
           </p>
         </div>
         <div
@@ -115,9 +113,9 @@
             alt=""
             loading="lazy"
           />
-          <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
+          <h3 class="text-primary text-[18px] font-[800]">Для тих</h3>
           <p class="text-white text-[16px]">
-            В Вашому житті повторюються проблеми в стосунках та з грошима
+            Хто не знає, з чого почати запуск або продажі
           </p>
         </div>
         <div
@@ -130,9 +128,9 @@
             alt=""
             loading="lazy"
           />
-          <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
+          <h3 class="text-primary text-[18px] font-[800]">Для тих</h3>
           <p class="text-white text-[16px]">
-            Ви хочете вийти з кола невдач та страхів
+            Хто хоче збільшити дохід, але не знає як
           </p>
         </div>
         <div
@@ -145,9 +143,9 @@
             alt=""
             loading="lazy"
           />
-          <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
+          <h3 class="text-primary text-[18px] font-[800]">Для тих</h3>
           <p class="text-white text-[16px]">
-            Ви не розумієте, чого хочете насправді в житті
+            Хто втомився працювати без системи
           </p>
         </div>
         <div
@@ -160,9 +158,9 @@
             alt=""
             loading="lazy"
           />
-          <h3 class="text-primary text-[18px] font-[800]">Для Вас якщо</h3>
+          <h3 class="text-primary text-[18px] font-[800]">Для тих</h3>
           <p class="text-white text-[16px]">
-            Ви відчуваєте, що потребуєте змін, але не знаєте, з чого почати
+            Хто хоче змінити мислення та вийти на новий рівень
           </p>
         </div>
       </div>
@@ -176,7 +174,7 @@
         data-aos="fade-up"
       >
         <h2 class="grad gradient-text text-center leading-none">
-          ФОРМАТ МАРАФОНУ <br />ЕНЕРГІЇ ДУШІ
+          10 ДНІВ <br />ІНТЕНСИВНОЇ РОБОТИ
         </h2>
       </div>
       <div class="flex items-center justify-center">
@@ -186,20 +184,23 @@
         >
           <div class="flex flex-row gap-4 relative">
             <div
-              class="absolute w-[5px] rounded-full bg-[red] h-[80%] left-[2.1%] top-[0%] bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F]"
+              class="absolute w-[5px] rounded-full bg-[red] h-[90%] left-[2.1%] top-[0%] bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F]"
             ></div>
 
             <ul class="text-[22px]">
               <li class="text-before mb-4 leading-8" data-aos="fade-right">
                 <h3>
-                  <span class="text-primary font-bold">30 хвилин</span> в день
-                  Вашого часу
+                  <span class="text-primary font-bold"
+                    >5 освітніх вебінарів
+                  </span>
+                  із практичними кейсами та техніками.
                 </h3>
               </li>
               <li class="text-before mb-4 leading-8" data-aos="fade-right">
                 <h3>
-                  Ви слухаєте
-                  <span class="text-primary font-bold">медитацію на вибір</span>
+                  3 групові
+                  <span class="text-primary font-bold">практичні сесії</span>
+                  для розбору особистих помилок.
                 </h3>
               </li>
               <li class="text-before mb-4 leading-8" data-aos="fade-right">
@@ -212,20 +213,31 @@
               </li>
               <li class="text-before mb-4 leading-8" data-aos="fade-right">
                 <h3>
-                  Ви приходите на другий вебінар:
-                  <span class="text-primary font-bold"
-                    >«Відкрий прихований потенціал: як зрозуміти налаштування
-                    своєї душі»</span
-                  >
+                  Чат підтримки
+                  <span class="text-primary font-bold">та нетворкінгу</span> з
+                  учасниками.
                 </h3>
               </li>
               <li class="text-before mb-4 leading-8" data-aos="fade-right">
                 <h3>
-                  Ви насолоджуєтесь
+                  Авторські
+                  <span class="text-primary font-bold">медитації</span>
+                  для роботи з мисленням і фінансовими блоками.
+                </h3>
+              </li>
+              <li class="text-before mb-4 leading-8" data-aos="fade-right">
+                <h3>
+                  Використання
+                  <span class="text-primary font-bold">реальних </span>
+                  кейсів.
+                </h3>
+              </li>
+              <li class="text-before mb-4 leading-8" data-aos="fade-right">
+                <h3>
+                  Чіткий план дій
                   <span class="text-primary font-bold"
-                    >від змін які відбуваються</span
+                    >для запусків і продажів.</span
                   >
-                  в Вашому житті
                 </h3>
               </li>
             </ul>
@@ -265,11 +277,9 @@
                   loading="lazy"
                 />
                 <h3>
-                  Ви розкриєте
-                  <span class="text-primary font-bold"
-                    >базові налаштування</span
-                  >
-                  своєї душі
+                  Позбавлення
+                  <span class="text-primary font-bold">від блоків</span>
+                  і сумнівів у продажах.
                 </h3>
               </li>
               <li
@@ -284,8 +294,9 @@
                   loading="lazy"
                 />
                 <h3>
-                  Ви <span class="text-primary font-bold">звільнитеся</span> від
-                  енергетичних блоків
+                  Готовий алгоритм
+                  <span class="text-primary font-bold">запуску</span> для
+                  масштабування доходу.
                 </h3>
               </li>
               <li
@@ -300,9 +311,9 @@
                   loading="lazy"
                 />
                 <h3>
-                  Ви
-                  <span class="text-primary font-bold">усвідомите</span>
-                  кармічні впливи на своє життя
+                  Навичка
+                  <span class="text-primary font-bold"> легкого </span>
+                  спілкування з клієнтами та закриття угод.
                 </h3>
               </li>
               <li
@@ -317,9 +328,11 @@
                   loading="lazy"
                 />
                 <h3>
-                  Ви
-                  <span class="text-primary font-bold">посилите енергію</span>
-                  своєї душі та життеву силу
+                  Практичне
+                  <span class="text-primary font-bold">
+                    збільшення прибутку
+                  </span>
+                  через системний підхід.
                 </h3>
               </li>
               <li
@@ -334,11 +347,28 @@
                   loading="lazy"
                 />
                 <h3>
-                  Ви
-                  <span class="text-primary font-bold"
-                    >створите чіткий план</span
-                  >
-                  дій для реалізації свого призначення
+                  Нове коло
+                  <span class="text-primary font-bold">
+                    спілкування для розвитку
+                  </span>
+                  та підтримки.
+                </h3>
+              </li>
+              <li
+                class="mb-4 leading-8 flex flex-row gap-5 items-center"
+                data-aos="fade-up"
+              >
+                <img
+                  width="32"
+                  height="32"
+                  src="@/assets/images/pink-checkbox-64.png"
+                  alt=""
+                  loading="lazy"
+                />
+                <h3>
+                  Опанування
+                  <span class="text-primary font-bold"> унікальних </span>
+                  технік
                 </h3>
               </li>
             </ul>
@@ -355,10 +385,7 @@
         class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14"
         data-aos="fade-up"
       >
-        <h2 class="grad gradient-text text-center leading-none">
-          ПРОПОНУЄМО ДВА ПАКЕТИ<br />
-          УЧАСТІ
-        </h2>
+        <h2 class="grad gradient-text text-center leading-none">ТАРИФИ:</h2>
       </div>
       <div class="w-fit mx-auto">
         <div class="flex justify-center gap-11 flex-col lg:flex-row">
@@ -369,45 +396,25 @@
             >
               <div class="flex flex-col justify-between h-full">
                 <h2 class="text-2xl font-bold mb-4 text-left text-[32px]">
-                  STANDART
+                  Стандарт
                 </h2>
                 <ul class="list-decimal list-inside mb-4 text-[18px] flex-1">
-                  <li>
-                    Доступ до
-                    <span class="text-primary font-bold">марафону</span>
-                  </li>
-                  <li>
-                    Доступ до
-                    <span class="text-primary font-bold">п’яти медитацій</span>
-                    під час марафону
-                  </li>
-                  <li>
-                    Доступ в спільний чат
-                    <span class="text-primary font-bold">зі мною</span>
-                  </li>
-                  <li>
-                    Можливість
-                    <span class="text-primary font-bold">задати питання</span>
-                    та
-                    <span class="text-primary font-bold">отримати</span>
-                    відповідь
-                  </li>
-                  <li>
-                    <span class="text-primary font-bold">Два</span> вебінари
-                  </li>
-                  <li>
-                    Одна медитація (на вибір) в
-                    <span class="text-primary font-bold">постійний</span> доступ
-                  </li>
+                  <li>5 вебінарів.</li>
+                  <li>3 групові практики з фідбеком.</li>
+                  <li>Чат підтримки та нетворкінгу.</li>
+                  <li>3 авторські медитації.</li>
+                  <li>Доступ до записів усіх занять.</li>
+                  <li>Можливість виграти приз 7 000 гривень.</li>
                 </ul>
                 <div class="text-center flex flex-col mt-12">
-                  <span class="text-4xl font-bold text-white">701 грн.</span>
+                  <span class="text-2xl font-bold line-through">400$</span>
+                  <span class="text-4xl font-bold">199$</span>
                 </div>
                 <div class="flex flex-col justify-center items-center mt-12">
                   <PaymentButton
                     class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
                     :productName="'Пакет послуг STANDARD'"
-                    :productPrice="701"
+                    :productPrice="199"
                   />
                 </div>
               </div>
@@ -434,53 +441,25 @@
                   VIP
                 </h2>
                 <ul class="list-decimal list-inside mb-4 text-[18px] flex-1">
-                  <li>
-                    Доступ до
-                    <span class="text-primary font-bold">марафону</span>
-                  </li>
-                  <li>
-                    Доступ до
-                    <span class="text-primary font-bold">п’яти медитацій</span>
-                    під час марафону
-                  </li>
-                  <li>
-                    Доступ в спільний чат
-                    <span class="text-primary font-bold">зі мною</span>
-                  </li>
-                  <li>
-                    Можливість
-                    <span class="text-primary font-bold">задати питання</span>
-                    та
-                    <span class="text-primary font-bold">отримати</span>
-                    відповідь
-                  </li>
-                  <li>
-                    <span class="text-primary font-bold">Два</span> вебінари
-                  </li>
-                  <li>
-                    Одна медитація (на вибір) в
-                    <span class="text-primary font-bold">постійний</span>
-                    доступ
-                  </li>
-                  <li class="text-primary font-bold">
-                    5 медитацій в доступ назавжди
-                  </li>
-                  <li class="text-primary font-bold">
-                    Вебінар з можливістю отримати особистий розбір та відповіді
-                    на питання.
-                  </li>
-                  <li class="text-primary font-bold">
-                    VIP-чат зі мною з моім власним супроводом
-                  </li>
+                  <li>5 вебінарів.</li>
+                  <li>3 групові практики з фідбеком.</li>
+                  <li>Чат підтримки та нетворкінгу.</li>
+                  <li>3 авторські медитації.</li>
+                  <li>Доступ до записів усіх занять.</li>
+                  <li>Можливість виграти приз 7 000 гривень.</li>
+                  <li>Особистий чат із вами протягом марафону.</li>
+                  <li>Індивідуальний розбір 3 кейсів.</li>
+                  <li>Додаткова медитація «Гроші».</li>
                 </ul>
                 <div class="text-center flex flex-col mt-12">
-                  <span class="text-4xl font-bold">1901 грн.</span>
+                  <span class="text-2xl font-bold line-through">900$</span>
+                  <span class="text-4xl font-bold">700$</span>
                 </div>
                 <div class="flex flex-col justify-center items-center mt-12">
                   <PaymentButton
                     class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
                     :productName="'Пакет послуг VIP'"
-                    :productPrice="1901"
+                    :productPrice="700"
                   />
                 </div>
               </div>
@@ -514,7 +493,7 @@
       <Carousel v-bind="config">
         <Slide v-for="(image, index) in images" :key="index">
           <div class="carousel__item">
-            <img :src="image" alt="Image"/>
+            <img :src="image" alt="Image" />
           </div>
         </Slide>
         <template #addons>

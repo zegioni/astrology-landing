@@ -15,7 +15,7 @@ export default defineEventHandler(async (event) => {
       },
       body: JSON.stringify({
         amount: body.amount,
-        ccy: 980, // Код валюты (980 - гривна)
+        ccy: 840, // Код валюты (980 - гривна)
         merchantPaymInfo: {
           reference: body.reference,
           destination: body.destination,

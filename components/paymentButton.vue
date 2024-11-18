@@ -25,7 +25,7 @@ const createInvoice = async () => {
       },
       body: JSON.stringify({
         amount: props.productPrice * 100, // Укажите сумму счета в копейках
-        ccy: 980, // Код валюты (980 - гривна)
+        ccy: 840, // Код валюты (980 - гривна)
         merchantPaymInfo: {
           reference: `order-${Math.floor(Math.random() * 1000000)}`,
           destination: props.productName,
