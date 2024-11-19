@@ -68,7 +68,7 @@
         data-aos="fade-up"
       >
         <h2 class="grad gradient-text text-center leading-none">
-          ДЛЯ КОГО <br />ЕНЕРГІЇ ДУШІ
+          ДЛЯ КОГО?
         </h2>
       </div>
 
@@ -173,9 +173,7 @@
         class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14"
         data-aos="fade-up"
       >
-        <h2 class="grad gradient-text text-center leading-none">
-          10 ДНІВ <br />ІНТЕНСИВНОЇ РОБОТИ
-        </h2>
+        <h2 class="grad gradient-text text-center leading-none">ФОРМАТ:</h2>
       </div>
       <div class="flex items-center justify-center">
         <div
@@ -188,6 +186,12 @@
             ></div>
 
             <ul class="text-[22px]">
+              <li class="text-before mb-4 leading-8" data-aos="fade-right">
+                <h3>
+                  <span class="text-primary font-bold">10 днів </span>
+                  інтенсивної роботи.
+                </h3>
+              </li>
               <li class="text-before mb-4 leading-8" data-aos="fade-right">
                 <h3>
                   <span class="text-primary font-bold"
