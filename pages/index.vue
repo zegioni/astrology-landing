@@ -209,14 +209,6 @@
               </li>
               <li class="text-before mb-4 leading-8" data-aos="fade-right">
                 <h3>
-                  Ви приходите на першій вебінар:
-                  <span class="text-primary font-bold"
-                    >«Карма і Доля: секрети душі які змінити твоє життя»
-                  </span>
-                </h3>
-              </li>
-              <li class="text-before mb-4 leading-8" data-aos="fade-right">
-                <h3>
                   Чат підтримки
                   <span class="text-primary font-bold">та нетворкінгу</span> з
                   учасниками.
