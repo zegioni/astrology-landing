@@ -199,7 +199,7 @@ async function submitForm() {
         sum: 100,
       },
     ],
-    result_callback: 'https://neo18.com.ua/api/callback',
+    result_callback: 'https://astrology-landing-git-dev-onishchenko-projects.vercel.app/api/callback',
   }
 
   try {
