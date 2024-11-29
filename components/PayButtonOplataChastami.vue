@@ -117,29 +117,29 @@ const showToast = (title: string, message: string, type = 'info') => {
   }, 3000)
 }
 
-async function getExchangeRate() {
-  try {
-    const response = await axios.get('https://api.monobank.ua/bank/currency') // Используем axios для запроса
-    console.log('response :>> ', response)
+// async function getExchangeRate() {
+//   try {
+//     const response = await axios.get('https://api.monobank.ua/bank/currency') // Используем axios для запроса
+//     console.log('response :>> ', response)
 
-    const currencyData = await response.data
-    const usdToUah = currencyData.find(
-      (rate: { currencyCodeA: number; currencyCodeB: number }) =>
-        rate.currencyCodeA === 840 && rate.currencyCodeB === 980,
-    )
+//     const currencyData = await response.data
+//     const usdToUah = currencyData.find(
+//       (rate: { currencyCodeA: number; currencyCodeB: number }) =>
+//         rate.currencyCodeA === 840 && rate.currencyCodeB === 980,
+//     )
 
-    if (!usdToUah) throw new Error('Курс USD → UAH не найден')
+//     if (!usdToUah) throw new Error('Курс USD → UAH не найден')
 
-    return usdToUah.rateSell // Используем rateSell
-  } catch (error) {
-    showToast(
-      'Не вдалося отримати курс валют від банку',
-      'Спробуйте ще раз через декілька хвилин',
-      'error',
-    )
-    return null
-  }
-}
+//     return usdToUah.rateSell // Используем rateSell
+//   } catch (error) {
+//     showToast(
+//       'Не вдалося отримати курс валют від банку',
+//       'Спробуйте ще раз через декілька хвилин',
+//       'error',
+//     )
+//     return null
+//   }
+// }
 
 // Фильтрация ввода (только цифры)
 const filterDigits = () => {
@@ -165,17 +165,17 @@ function generateUniqueId() {
 
 // Отправка формы
 async function submitForm() {
-  validatePhone()
-  if (phoneError.value) return
+  // validatePhone()
+  // if (phoneError.value) return
 
-  const clientPhone = `+38${phoneInput.value}` //вернуть client_phone
+  // const clientPhone = `+38${phoneInput.value}` //вернуть client_phone
 
   // Получаем курс и конвертируем
-  const exchangeRate = await getExchangeRate()
-  console.log('exchangeRate :>> ', exchangeRate)
-  if (!exchangeRate) return // Прерываем выполнение при ошибке
+  // const exchangeRate = await getExchangeRate()
+  // console.log('exchangeRate :>> ', exchangeRate)
+  // if (!exchangeRate) return // Прерываем выполнение при ошибке
 
-  const priceInUAH = (props.productPrice * exchangeRate).toFixed(2) // Конвертация в гривны
+  // const priceInUAH = (props.productPrice * exchangeRate).toFixed(2) // Конвертация в гривны
 
   const formData = {
     store_order_id: generateUniqueId(),
