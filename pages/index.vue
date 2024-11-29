@@ -410,12 +410,12 @@
                     :productName="'Пакет послуг STANDARD'"
                     :productPrice="199"
                   />
-                  <button
+                  <!-- <button
                     class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
                     @click="openModal('Пакет послуг STANDARD', 199)"
                   >
                     Оплата частинами
-                  </button>
+                  </button> -->
                 </div>
               </div>
               <div
@@ -474,12 +474,12 @@
                     :productName="'Пакет послуг VIP'"
                     :productPrice="700"
                   />
-                  <button
+                  <!-- <button
                     class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
                     @click="openModal('Пакет послуг VIP', 700)"
                   >
                     Оплата частинами
-                  </button>
+                  </button> -->
                 </div>
               </div>
               <div
