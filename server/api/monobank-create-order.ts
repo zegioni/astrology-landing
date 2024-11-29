@@ -26,15 +26,18 @@ export default defineEventHandler(async (event) => {
   const signature = generateSignature(config.private.SIGN_KEY, requestBody)
 
   try {
-    const response = await $fetch(config.public.MONOBANK_API_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'store-id': config.private.STORE_ID,
-        signature: signature,
+    const response = await $fetch(
+      `${config.public.MONOBANK_API_URL}/api/order/create`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'store-id': config.private.STORE_ID,
+          signature: signature,
+        },
+        body: JSON.stringify(requestBody),
       },
-      body: JSON.stringify(requestBody),
-    })
+    )
     console.log('Response from Monobank:', response)
 
     return response

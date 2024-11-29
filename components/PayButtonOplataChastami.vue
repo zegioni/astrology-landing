@@ -215,6 +215,7 @@ async function submitForm() {
 
     showToast('Заявка успішно надіслана!', 'Очікуйте на деталі.', 'success')
   } catch (error) {
+    console.log('error :>> ', error);
     showToast('Помилка створення заявки.', 'Спробуйте ще раз', 'error')
   }
 }
