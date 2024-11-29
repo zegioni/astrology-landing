@@ -67,9 +67,7 @@
         class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14"
         data-aos="fade-up"
       >
-        <h2 class="grad gradient-text text-center leading-none">
-          ДЛЯ КОГО?
-        </h2>
+        <h2 class="grad gradient-text text-center leading-none">ДЛЯ КОГО?</h2>
       </div>
 
       <div
@@ -408,10 +406,16 @@
                 </div>
                 <div class="flex flex-col justify-center items-center mt-12">
                   <PaymentButton
-                    class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
+                    class="mb-4 w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
                     :productName="'Пакет послуг STANDARD'"
                     :productPrice="199"
                   />
+                  <!-- <button
+                    class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
+                    @click="openModal('Пакет послуг STANDARD', 199)"
+                  >
+                    Оплата частинами
+                  </button> -->
                 </div>
               </div>
               <div
@@ -421,6 +425,18 @@
                   <img
                     width="128"
                     src="@/assets/images/standard-price.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </span>
+              </div>
+              <div
+                class="absolute top-[50%] right-[-19%] z-50 p-2 rotate-[13deg] hue-rotate-custom"
+              >
+                <span class="">
+                  <img
+                    width="128"
+                    src="@/assets/images/white-stroke+shadow.png"
                     alt=""
                     loading="lazy"
                   />
@@ -453,10 +469,17 @@
                 </div>
                 <div class="flex flex-col justify-center items-center mt-12">
                   <PaymentButton
-                    class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
+                    class="mb-4 w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
+                    style="gap: 10px"
                     :productName="'Пакет послуг VIP'"
                     :productPrice="700"
                   />
+                  <!-- <button
+                    class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
+                    @click="openModal('Пакет послуг VIP', 700)"
+                  >
+                    Оплата частинами
+                  </button> -->
                 </div>
               </div>
               <div
@@ -471,12 +494,43 @@
                   />
                 </span>
               </div>
+              <div
+                class="absolute top-[50%] right-[-19%] z-10 p-2 rotate-[13deg] hue-rotate-custom"
+              >
+                <span class="">
+                  <img
+                    width="128"
+                    src="@/assets/images/white-stroke+shadow.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Модальное окно -->
+  <div
+    v-if="isModalOpen"
+    class="modal bg-[#4b4b4b52] bg-opacity-[90%] backdrop-blur-[15px] border-[1px] border-[#ffffff42] p-6 rounded-lg text-white"
+  >
+    <div
+      class="modal-content bg-[#4b4b4b52] border-[1px] border-[#ffffff42] p-6 rounded-lg text-white relative text-white"
+    >
+      <button class="absolute top-2 right-2 text-gray-600" @click="closeModal">
+        ✖
+      </button>
+      <!-- Компонента оплаты частями -->
+      <PayButtonOplataChastami
+        :productName="modalData.productName"
+        :productPrice="modalData.productPrice"
+      />
+    </div>
+  </div>
 
   <section class="py-16 relative">
     <div class="container-xl mx-auto px-4">
@@ -519,6 +573,27 @@ import img7 from '@/assets/images/vidguk/photo_7_2024-11-12_10-45-42.jpg'
 import img8 from '@/assets/images/vidguk/photo_8_2024-11-12_10-45-42.jpg'
 import img9 from '@/assets/images/vidguk/photo_9_2024-11-12_10-45-42.jpg'
 import img10 from '@/assets/images/vidguk/photo_10_2024-11-12_10-45-42.jpg'
+import PayButtonOplataChastami from '~/components/PayButtonOplataChastami.vue'
+
+const isModalOpen = ref(false)
+const modalData = ref({
+  productName: '',
+  productPrice: 0,
+})
+
+// Открытие модального окна с передачей данных
+const openModal = (productName, productPrice) => {
+  modalData.value = { productName, productPrice }
+  isModalOpen.value = true
+  document.body.classList.add('no-scroll')
+}
+
+// Закрытие модального окна
+const closeModal = () => {
+  isModalOpen.value = false
+  modalData.value = { productName: '', productPrice: 0 }
+  document.body.classList.remove('no-scroll')
+}
 
 const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10]
 
@@ -614,6 +689,24 @@ onUpdated(async () => {
 </script>
 
 <style>
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+.modal-content {
+  width: 350px;
+}
+body.no-scroll {
+  overflow: hidden;
+}
 .carousel__item {
   padding: 5px;
 }

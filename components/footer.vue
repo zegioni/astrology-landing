@@ -76,6 +76,9 @@
           <li>
             <img width="100" src="@/assets/images/visa.svg" alt="" />
           </li>
+          <li>
+            <img width="40" src="@/assets/images/white-stroke+shadow.png" alt="" />
+          </li>
         </ul>
       </div>
     </div>
