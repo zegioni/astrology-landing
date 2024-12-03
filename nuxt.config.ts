@@ -4,9 +4,11 @@ export default defineNuxtConfig({
       MONOBANK_API_KEY: process.env.MONOBANK_API_KEY,
       STORE_ID: process.env.STORE_ID,
       SIGN_KEY: process.env.SIGN_KEY,
+      SECRET_EMAIL_PASS: process.env.SECRET_EMAIL_PASS,
     },
     public: {
       MONOBANK_API_URL: process.env.MONOBANK_API_URL,
+      EMAIL: process.env.EMAIL,
     },
   },
   compatibilityDate: '2024-04-03',

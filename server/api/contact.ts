@@ -1,7 +1,9 @@
 import nodemailer from 'nodemailer'
+import { useRuntimeConfig } from '#imports'
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
+  const config = useRuntimeConfig()
 
   // Здесь вы можете обрабатывать данные формы
   const { product, firstName, part, lastName, phone, callBack } = body
@@ -14,14 +16,14 @@ export default defineEventHandler(async (event) => {
     port: 465,
     secure: true, // true для 465, false для других портов
     auth: {
-      user: 'elenaoniua@gmail.com',
-      pass: '',
+      user: config.public.EMAIL,
+      pass: config.private.SECRET_EMAIL_PASS,
     },
   })
 
   const mailOptions = {
-    from: 'elenaoniua@gmail.com',
-    to: 'elenaoniua@gmail.com',
+    from: config.public.EMAIL,
+    to: config.public.EMAIL,
     subject: `Замовлення на оплату частинами з сайта від ${firstName}`,
     html: `
         <h3>Деталі замовлення:</h3>
