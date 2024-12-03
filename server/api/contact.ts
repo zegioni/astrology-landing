@@ -15,7 +15,7 @@ export default defineEventHandler(async (event) => {
     secure: true, // true для 465, false для других портов
     auth: {
       user: 'elenaoniua@gmail.com',
-      pass: 'risd johe rmak lgdu',
+      pass: '',
     },
   })
 
