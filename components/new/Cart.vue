@@ -42,7 +42,7 @@
             class="mt-2 bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white p-2 rounded"
             @click="showPaymentModal = true"
           >
-            Оплата Частинами
+            Покупка Частинами
           </button>
         </div>
       </div>
