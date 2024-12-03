@@ -1,511 +1,240 @@
 <template>
-  <CustomToast
-    v-if="toast.visible"
-    :title="toast.title"
-    :message="toast.message"
-    :type="toast.type"
-  />
+  <section class="mb-[40px]">
+    <div class="flex flex-col md:flex-row items-center gap-5 text-[16px]">
+      <div>
+        <img src="../assets/images/pdf/3.jpg" alt="" class="md:w-[500px]" />
+      </div>
+      <div class="ml-[15px] mr-[15px]">
+        <div class="flex flex-col items-center md:items-start">
+          <h1 class="mb-4 text-[32px] text-center md:text-left">
+            ГРОШІ | ПРОДАЖІ | МАСШТАБ
+          </h1>
+          <p class="mb-4 text-center text-[24px] md:text-left">
+            Вітаю! Я рада представити вам програму наставництва, яка допоможе
+            вам досягти успіху в продажах.
+          </p>
+          <span class="flex flex-row gap-2 items-center">
+            <img
+              class="rounded-full border-solid border-white border-2"
+              width="32"
+              src="../assets/images/pdf/2.jpg"
+              alt=""
+            />
+
+            <span class="font-semibold">by Олена Оніщенко</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section>
-    <div class="bg-hero-image pb-[1px]">
-      <div class="mb-5">
-        <!-- <div class="max-w-[500px] mx-auto">
-          <div class="flex justify-end p-4">
-            <h2
-              class="bg-black bg-opacity-[32%] backdrop-blur-[25px] p-5 border-2 border-[#ffffff42] rounded-[8px] text-primary font-bold text-[32px]"
-            >
-              СТАРТ 10.11
-            </h2>
-          </div>
-        </div> -->
-        <div class="flex flex-col items-center">
-          <div class="container-2xl mx-auto pl-3 pr-3 mt-11">
-            <div class="relative">
-              <img
-                class="hero-image mx-auto max-w-[100%]"
-                width="800"
-                src="@/assets/images/hero-image.png"
-                alt=""
-              />
+    <div>
+      <div>
+        <img src="../assets/images/pdf/9.jpg" alt="" />
+      </div>
+      <div class="text-[16px]">
+        <div class="mt-12 md:mt-24 md:mb-24 ml-[15px] mr-[15px]">
+          <h2 class="mb-4 text-[32px]">Для кого це наставництво?</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3">
+            <div class="flex flex-row mb-6 items-baseline">
               <div
-                class="absolute h-auto w-full left-1/2 transform -translate-x-1/2 -bottom-[120px]"
+                class="mr-2 md:mr-4 flex items-center justify-center bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white text-[12px] font-semibold rounded-lg shadow-lg min-w-[32px] min-h-[32px]"
               >
-                <div
-                  class="max-w-[600px] mx-auto bg-black bg-opacity-[32%] backdrop-blur-[25px] p-5 rounded-[10px] border-2 border-[#80808045]"
-                >
-                  <div class="text-left">
-                    <h2 class="text-white text-[22px]">
-                      <span class="font-[200]">Продажі на максимум:</span>
-                      <br />
-                      <span class="text-primary font-bold text-[32px]">
-                        ЗАПУСКАЙ, ЗАРОБЛЯЙ, МАСШТАБУЙСЯ
-                      </span>
-                      <br />
-                      <span class="font-[200]">ОЛЕНА ОНІЩЕНКО</span>
-                    </h2>
-                  </div>
-                </div>
+                1
+              </div>
+
+              <div class="grow">
+                <p class="text-[24px]">Сумніви</p>
+                <p>Постійні сумніви в собі та своїх можливостях.</p>
+              </div>
+            </div>
+            <div class="flex flex-row mb-6 items-baseline">
+              <div
+                class="mr-2 md:mr-4 flex items-center justify-center bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white text-[12px] font-semibold rounded-lg shadow-lg min-w-[32px] min-h-[32px]"
+              >
+                2
+              </div>
+
+              <div class="text-[16px] grow">
+                <p class="text-[24px]">Складність</p>
+                <p>Відчуття, що продажі — це складно, не для вас.</p>
+              </div>
+            </div>
+            <div class="flex flex-row mb-6 items-baseline">
+              <div
+                class="mr-2 md:mr-4 flex items-center justify-center bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white text-[12px] font-semibold rounded-lg shadow-lg min-w-[32px] min-h-[32px]"
+              >
+                3
+              </div>
+
+              <div class="text-[16px] grow">
+                <p class="text-[24px]">Залучення</p>
+                <p>Не знаєте, як залучати клієнтів</p>
               </div>
             </div>
           </div>
-          <div class="mt-[150px]" style="z-index: 1">
-            <NuxtLink :to="{ path: '/', hash: '#price' }">
-              <button
-                class="font-[400] text-[#252525] text-[22px] mx-auto w-[220px] py-6 px-6 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-[30px]"
-              >
-                ХОЧУ
-              </button>
-            </NuxtLink>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pt-[40px] pb-[40px] ml-[15px] mr-[15px] md:mt-24 md:mb-24">
+    <div>
+      <div>
+        <h2 class="mb-4 text-[32px]">Бажаний результат</h2>
+        <div class="grid grid-cols-1">
+          <div class="flex flex-col md:flex-row mb-6">
+            <div class="grow mb-6">
+              <p class="text-[24px] mb-2">Легкість</p>
+              <p>Навчитися продавати легко та впевнено.</p>
+            </div>
+            <div class="text-[16px] grow mb-6">
+              <p class="text-[24px] mb-2">Експертність</p>
+              <p>Стати експертом, якого рекомендують.</p>
+            </div>
+            <div class="text-[16px] grow mb-6">
+              <p class="text-[24px] mb-2">Системний підхід</p>
+              <p>
+                Побудувати системний підхід до продажів, який збільшить ваш
+                дохід.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="py-16 relative">
-    <div class="container-xl mx-auto px-4">
-      <div
-        class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14"
-        data-aos="fade-up"
-      >
-        <h2 class="grad gradient-text text-center leading-none">ДЛЯ КОГО?</h2>
+  <section class="pt-[40px] pb-[40px] md:mt-24 md:mb-24">
+    <div class="flex flex-col md:flex-row items-center gap-5 text-[16px]">
+      <div>
+        <img src="../assets/images/pdf/10.jpg" alt="" class="md:w-[500px]" />
       </div>
-
-      <div
-        class="w-fit mx-auto grid grid-cols-2 md:grid-cols-3 justify-items-center mt-8 gap-[20px]"
-      >
-        <div
-          data-aos="fade-up"
-          class="shadow-pink-shadow bg-white text-white bg-opacity-[15%] backdrop-blur-[2px] rounded-lg p-3 flex flex-col justify-center items-center max-w-[250px] text-center border-[1px] border-[#ffffff42]"
-        >
-          <img
-            class="max-w-[100%]"
-            src="@/assets/images/memoji-astrology-girl-make-natal-map.png"
-            alt=""
-            loading="lazy"
-          />
-          <h3 class="text-primary text-[18px] font-[800]">Для тих</h3>
-          <p class="text-white text-[16px]">Хто сумнівається у своїх силах</p>
-        </div>
-        <div
-          data-aos="fade-up"
-          class="shadow-pink-shadow bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] rounded-lg p-3 flex flex-col justify-center items-center max-w-[250px] text-center border-[1px] border-[#ffffff42]"
-        >
-          <img
-            class="max-w-[100%]"
-            src="@/assets/images/memoji-astrology-wheel.png"
-            alt=""
-            loading="lazy"
-          />
-          <h3 class="text-primary text-[18px] font-[800]">Для тих</h3>
-          <p class="text-white text-[16px]">
-            Хто вважає, що продажі — це не для них
-          </p>
-        </div>
-        <div
-          data-aos="fade-up"
-          class="shadow-pink-shadow bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] rounded-lg p-3 flex flex-col justify-center items-center max-w-[250px] text-center border-[1px] border-[#ffffff42]"
-        >
-          <img
-            class="max-w-[100%]"
-            src="@/assets/images/memoji-man.png"
-            alt=""
-            loading="lazy"
-          />
-          <h3 class="text-primary text-[18px] font-[800]">Для тих</h3>
-          <p class="text-white text-[16px]">
-            Хто не знає, з чого почати запуск або продажі
-          </p>
-        </div>
-        <div
-          data-aos="fade-up"
-          class="shadow-pink-shadow bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] rounded-lg p-3 flex flex-col justify-center items-center max-w-[250px] text-center border-[1px] border-[#ffffff42]"
-        >
-          <img
-            class="max-w-[100%]"
-            src="@/assets/images/memoji-moon.png"
-            alt=""
-            loading="lazy"
-          />
-          <h3 class="text-primary text-[18px] font-[800]">Для тих</h3>
-          <p class="text-white text-[16px]">
-            Хто хоче збільшити дохід, але не знає як
-          </p>
-        </div>
-        <div
-          data-aos="fade-up"
-          class="shadow-pink-shadow bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] rounded-lg p-3 flex flex-col justify-center items-center max-w-[250px] text-center border-[1px] border-[#ffffff42]"
-        >
-          <img
-            class="max-w-[100%]"
-            src="@/assets/images/memoji-spiritual.png"
-            alt=""
-            loading="lazy"
-          />
-          <h3 class="text-primary text-[18px] font-[800]">Для тих</h3>
-          <p class="text-white text-[16px]">
-            Хто втомився працювати без системи
-          </p>
-        </div>
-        <div
-          data-aos="fade-up"
-          class="shadow-pink-shadow bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] rounded-lg p-3 flex flex-col justify-center items-center max-w-[250px] text-center border-[1px] border-[#ffffff42]"
-        >
-          <img
-            class="max-w-[100%]"
-            src="@/assets/images/memoji-mystical-moon.png "
-            alt=""
-            loading="lazy"
-          />
-          <h3 class="text-primary text-[18px] font-[800]">Для тих</h3>
-          <p class="text-white text-[16px]">
-            Хто хоче змінити мислення та вийти на новий рівень
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-16 relative">
-    <div class="container-xl mx-auto px-4">
-      <div
-        class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14"
-        data-aos="fade-up"
-      >
-        <h2 class="grad gradient-text text-center leading-none">ФОРМАТ:</h2>
-      </div>
-      <div class="flex items-center justify-center">
-        <div
-          data-aos="fade-up"
-          class="max-w-[300px] bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] border-[1px] border-[#ffffff42] text-white p-6 rounded-lg"
-        >
-          <div class="flex flex-row gap-4 relative">
-            <div
-              class="absolute w-[5px] rounded-full bg-[red] h-[90%] left-[2.1%] top-[0%] bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F]"
-            ></div>
-
-            <ul class="text-[22px]">
-              <li class="text-before mb-4 leading-8" data-aos="fade-right">
-                <h3>
-                  <span class="text-primary font-bold">10 днів </span>
-                  інтенсивної роботи.
-                </h3>
-              </li>
-              <li class="text-before mb-4 leading-8" data-aos="fade-right">
-                <h3>
-                  <span class="text-primary font-bold"
-                    >5 освітніх вебінарів
-                  </span>
-                  із практичними кейсами та техніками.
-                </h3>
-              </li>
-              <li class="text-before mb-4 leading-8" data-aos="fade-right">
-                <h3>
-                  3 групові
-                  <span class="text-primary font-bold">практичні сесії</span>
-                  для розбору особистих помилок.
-                </h3>
-              </li>
-              <li class="text-before mb-4 leading-8" data-aos="fade-right">
-                <h3>
-                  Чат підтримки
-                  <span class="text-primary font-bold">та нетворкінгу</span> з
-                  учасниками.
-                </h3>
-              </li>
-              <li class="text-before mb-4 leading-8" data-aos="fade-right">
-                <h3>
-                  Авторські
-                  <span class="text-primary font-bold">медитації</span>
-                  для роботи з мисленням і фінансовими блоками.
-                </h3>
-              </li>
-              <li class="text-before mb-4 leading-8" data-aos="fade-right">
-                <h3>
-                  Використання
-                  <span class="text-primary font-bold">реальних </span>
-                  кейсів.
-                </h3>
-              </li>
-              <li class="text-before mb-4 leading-8" data-aos="fade-right">
-                <h3>
-                  Чіткий план дій
-                  <span class="text-primary font-bold"
-                    >для запусків і продажів.</span
-                  >
-                </h3>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-16 relative">
-    <div class="container-xl mx-auto px-4">
-      <div
-        class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14"
-        data-aos="fade-up"
-      >
-        <h2 class="grad gradient-text text-center leading-none">
-          ЯКІ РЕЗУЛЬТАТИ ВИ ОТРИМУЄТЕ
-          <br />ЗА 10 ДНІВ МАРАФОНУ?
+      <div class="pb-[80px] ml-[15px] mr-[15px]">
+        <h2 class="text-[32px] md:text-[42px]text-center md:text-left mb-4">
+          Готовність до змін
         </h2>
+        <div class="flex flex-col md:flex-row md:gap-10 items-center">
+          <div
+            class="mb-4 p-2 md:p-4 flex flex-col items-left bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white text-[12px] rounded-lg shadow-lg w-[220px]"
+          >
+            <h3 class="text-[16px] mb-2 md:text-[24px]">Зміна мислення</h3>
+            <p class="text-[16px]">
+              Змінити мислення та налаштуватися на успіх.
+            </p>
+          </div>
+          <div
+            class="mb-4 p-2 md:p-4 flex flex-col items-left bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white text-[12px] rounded-lg shadow-lg w-[220px]"
+          >
+            <h3 class="text-[16px] mb-2 md:text-[24px]">Відкритість</h3>
+            <p class="text-[16px]">
+              Відкриті до навчання, нового досвіду та дій.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="flex items-center justify-center">
+    </div>
+  </section>
+
+  <section class="pt-[40px] pb-[40px] md:mt-24 md:mb-24">
+    <div class="flex flex-col items-center gap-5 text-[16px] md:flex-row">
+      <div class="">
+        <img src="../assets/images/pdf/13.jpg" alt="" class="md:w-[500px]" />
+      </div>
+      <div class="pb-[40px] ml-[15px] mr-[15px]">
+        <h2 class="text-[32px] md:text-[42px] text-center mb-4 md:text-left">
+          Що ви отримаєте на наставництві?
+        </h2>
+        <div class="grid grid-cols-1">
+          <div class="flex flex-col items-start md:items-start">
+            <div class="flex flex-row mb-6 items-baseline md:items-center">
+              <div
+                class="mr-2 md:mr-6 flex items-center justify-center bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white text-[12px] font-semibold rounded-lg shadow-lg min-w-[32px] min-h-[32px] md:min-w-[48px] md:min-h-[48px] md:text-[24px]"
+              >
+                1
+              </div>
+              <div class="grow">
+                <h2 class="text-[24px]">Курс навчання</h2>
+                <p>
+                  17 уроків, які крок за кроком розкривають всю систему успішних
+                  продажів.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-row mb-6 items-baseline md:items-center">
+              <div
+                class="mr-2 md:mr-6 flex items-center justify-center bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white text-[12px] font-semibold rounded-lg shadow-lg min-w-[32px] min-h-[32px] md:min-w-[48px] md:min-h-[48px] md:text-[24px]"
+              >
+                2
+              </div>
+              <div class="grow">
+                <h2 class="text-[24px]">Вебінари</h2>
+                <p>
+                  7 потужних вебінарів, де ви отримуєте не лише теорію, але й
+                  реальні кейси.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-row mb-6 items-baseline md:items-center">
+              <div
+                class="mr-2 md:mr-6 flex items-center justify-center bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white text-[12px] font-semibold rounded-lg shadow-lg min-w-[32px] min-h-[32px] md:min-w-[48px] md:min-h-[48px] md:text-[24px]"
+              >
+                3
+              </div>
+              <div class="grow">
+                <h2 class="text-[24px]">Практична робота</h2>
+                <p>
+                  7 розборів, щоб розібрати ваші особисті помилки та налаштувати
+                  стратегію.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-row mb-6 items-baseline md:items-center">
+              <div
+                class="mr-2 md:mr-6 flex items-center justify-center bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white text-[12px] font-semibold rounded-lg shadow-lg min-w-[32px] min-h-[32px] md:min-w-[48px] md:min-h-[48px] md:text-[24px]"
+              >
+                4
+              </div>
+              <div class="grow">
+                <h2 class="text-[24px]">Онлайн-Випускний</h2>
+                <p>Випускний, який стане вашою точкою трансформації.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pt-[80px] pb-[40px] md:mt-24 md:mb-24">
+    <div class="flex flex-col items-center gap-5 text-[16px] md:flex-row">
+      <div>
+        <img src="../assets/images/pdf/15.jpg" alt="" class="md:w-[500px]" />
+      </div>
+      <div class="pb-[40px] ml-[15px] mr-[15px]">
+        <h2 class="text-[32px] md:text-[42px] text-center md:text-left mb-6">
+          Підтримка та нетворкінг
+        </h2>
         <div
-          data-aos="fade-up"
-          class="max-w-[420px] bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] border-[1px] border-[#ffffff42] text-white p-6 rounded-lg"
+          class="flex flex-col md:flex-row mx-auto w-[220px] md:w-full items-start gap-10 md:gap-16"
         >
-          <div class="flex flex-row gap-4 relative">
-            <ul class="text-[22px] text-white">
-              <li
-                class="mb-4 leading-8 flex flex-row gap-5 items-center"
-                data-aos="fade-up"
-              >
-                <img
-                  width="32"
-                  height="32"
-                  src="@/assets/images/pink-checkbox-64.png"
-                  alt=""
-                  loading="lazy"
-                />
-                <h3>
-                  Позбавлення
-                  <span class="text-primary font-bold">від блоків</span>
-                  і сумнівів у продажах.
-                </h3>
-              </li>
-              <li
-                class="mb-4 leading-8 flex flex-row gap-5 items-center"
-                data-aos="fade-up"
-              >
-                <img
-                  width="32"
-                  height="32"
-                  src="@/assets/images/pink-checkbox-64.png"
-                  alt=""
-                  loading="lazy"
-                />
-                <h3>
-                  Готовий алгоритм
-                  <span class="text-primary font-bold">запуску</span> для
-                  масштабування доходу.
-                </h3>
-              </li>
-              <li
-                class="mb-4 leading-8 flex flex-row gap-5 items-center"
-                data-aos="fade-up"
-              >
-                <img
-                  width="32"
-                  height="32"
-                  src="@/assets/images/pink-checkbox-64.png"
-                  alt=""
-                  loading="lazy"
-                />
-                <h3>
-                  Навичка
-                  <span class="text-primary font-bold"> легкого </span>
-                  спілкування з клієнтами та закриття угод.
-                </h3>
-              </li>
-              <li
-                class="mb-4 leading-8 flex flex-row gap-5 items-center"
-                data-aos="fade-up"
-              >
-                <img
-                  width="32"
-                  height="32"
-                  src="@/assets/images/pink-checkbox-64.png"
-                  alt=""
-                  loading="lazy"
-                />
-                <h3>
-                  Практичне
-                  <span class="text-primary font-bold">
-                    збільшення прибутку
-                  </span>
-                  через системний підхід.
-                </h3>
-              </li>
-              <li
-                class="mb-4 leading-8 flex flex-row gap-5 items-center"
-                data-aos="fade-up"
-              >
-                <img
-                  width="32"
-                  height="32"
-                  src="@/assets/images/pink-checkbox-64.png"
-                  alt=""
-                  loading="lazy"
-                />
-                <h3>
-                  Нове коло
-                  <span class="text-primary font-bold">
-                    спілкування для розвитку
-                  </span>
-                  та підтримки.
-                </h3>
-              </li>
-              <li
-                class="mb-4 leading-8 flex flex-row gap-5 items-center"
-                data-aos="fade-up"
-              >
-                <img
-                  width="32"
-                  height="32"
-                  src="@/assets/images/pink-checkbox-64.png"
-                  alt=""
-                  loading="lazy"
-                />
-                <h3>
-                  Опанування
-                  <span class="text-primary font-bold"> унікальних </span>
-                  технік
-                </h3>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRICE -->
-  <section id="price" class="py-16 relative overflow-hidden">
-    <div class="container-xl mx-auto px-4">
-      <div
-        class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14"
-        data-aos="fade-up"
-      >
-        <h2 class="grad gradient-text text-center leading-none">ТАРИФИ:</h2>
-      </div>
-      <div class="w-fit mx-auto">
-        <div class="flex justify-center gap-11 flex-col lg:flex-row">
-          <div class="flex gap-11 flex-col md:flex-row">
-            <div
-              data-aos="fade-right"
-              class="relative max-w-[320px] bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] border-[1px] border-[#ffffff42] text-white p-6 rounded-lg"
-            >
-              <div class="flex flex-col justify-between h-full">
-                <h2 class="text-2xl font-bold mb-4 text-left text-[32px]">
-                  Стандарт
-                </h2>
-                <ul class="list-decimal list-inside mb-4 text-[18px] flex-1">
-                  <li>5 вебінарів.</li>
-                  <li>3 групові практики з фідбеком.</li>
-                  <li>Чат підтримки та нетворкінгу.</li>
-                  <li>3 авторські медитації.</li>
-                  <li>Доступ до записів усіх занять.</li>
-                  <li>Можливість виграти приз 7 000 гривень.</li>
-                </ul>
-                <div class="text-center flex flex-col mt-12">
-                  <span class="text-2xl font-bold line-through">400$</span>
-                  <span class="text-4xl font-bold">199$</span>
-                </div>
-                <div class="flex flex-col justify-center items-center mt-12">
-                  <PaymentButton
-                    class="mb-4 w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
-                    :productName="'Пакет послуг STANDARD'"
-                    :productPrice="199"
-                  />
-                  <!-- <button
-                    class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
-                    @click="openModal('Пакет послуг STANDARD', 199)"
-                  >
-                    Оплата частинами
-                  </button> -->
-                </div>
-              </div>
-              <div
-                class="absolute top-[-6%] right-[-19%] z-10 p-2 hue-rotate-custom"
-              >
-                <span class="">
-                  <img
-                    width="128"
-                    src="@/assets/images/standard-price.png"
-                    alt=""
-                    loading="lazy"
-                  />
-                </span>
-              </div>
-              <div
-                class="absolute top-[50%] right-[-19%] z-50 p-2 rotate-[13deg] hue-rotate-custom"
-              >
-                <span class="">
-                  <img
-                    width="128"
-                    src="@/assets/images/white-stroke+shadow.png"
-                    alt=""
-                    loading="lazy"
-                  />
-                </span>
-              </div>
+          <div class="flex flex-col mb-6">
+            <img
+              width="42"
+              src="../assets/images/pdf/free-icon-chat-329500.png"
+              alt=""
+            />
+            <div class="md:w-[200px]">
+              <h2 class="text-[24px] mb-2">Чат</h2>
+              <p>Чат з учасниками — нові знайомства та підтримка.</p>
             </div>
-
-            <div
-              data-aos="fade-right"
-              class="relative max-w-[320px] bg-[#4b4b4b52] bg-opacity-[32%] backdrop-blur-[2px] border-[1px] border-[#ffffff42] p-6 rounded-lg text-white"
-            >
-              <div class="flex flex-col justify-between h-full">
-                <h2 class="text-2xl font-bold mb-4 text-left text-[32px]">
-                  VIP
-                </h2>
-                <ul class="list-decimal list-inside mb-4 text-[18px] flex-1">
-                  <li>5 вебінарів.</li>
-                  <li>3 групові практики з фідбеком.</li>
-                  <li>Чат підтримки та нетворкінгу.</li>
-                  <li>3 авторські медитації.</li>
-                  <li>Доступ до записів усіх занять.</li>
-                  <li>Можливість виграти приз 7 000 гривень.</li>
-                  <li>Особистий чат із вами протягом марафону.</li>
-                  <li>Індивідуальний розбір 3 кейсів.</li>
-                  <li>Додаткова медитація «Гроші».</li>
-                </ul>
-                <div class="text-center flex flex-col mt-12">
-                  <span class="text-2xl font-bold line-through">900$</span>
-                  <span class="text-4xl font-bold">700$</span>
-                </div>
-                <div class="flex flex-col justify-center items-center mt-12">
-                  <PaymentButton
-                    class="mb-4 w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
-                    style="gap: 10px"
-                    :productName="'Пакет послуг VIP'"
-                    :productPrice="700"
-                  />
-                  <!-- <button
-                    class="w-[215px] text-black py-5 px-5 bg-gradient-to-r from-[#FADA8F] via-[#FFFFFF] to-[#FADA8F] rounded-full"
-                    @click="openModal('Пакет послуг VIP', 700)"
-                  >
-                    Оплата частинами
-                  </button> -->
-                </div>
-              </div>
-              <div
-                class="absolute top-[-8%] right-[-19%] z-10 p-2 rotate-[13deg] hue-rotate-custom"
-              >
-                <span class="">
-                  <img
-                    width="128"
-                    src="@/assets/images/vip-price.png"
-                    alt=""
-                    loading="lazy"
-                  />
-                </span>
-              </div>
-              <div
-                class="absolute top-[50%] right-[-19%] z-10 p-2 rotate-[13deg] hue-rotate-custom"
-              >
-                <span class="">
-                  <img
-                    width="128"
-                    src="@/assets/images/white-stroke+shadow.png"
-                    alt=""
-                    loading="lazy"
-                  />
-                </span>
-              </div>
+          </div>
+          <div class="flex flex-col">
+            <img width="42" src="../assets/images/pdf/cup_4093066.png" alt="" />
+            <div class="md:w-[200px]">
+              <h2 class="text-[24px] mb-2">Виграш</h2>
+              <p>Можливість виграти 5 555 гривень!</p>
             </div>
           </div>
         </div>
@@ -513,290 +242,181 @@
     </div>
   </section>
 
-  <!-- Модальное окно -->
-  <div
-    v-if="isModalOpen"
-    class="modal bg-[#4b4b4b52] bg-opacity-[90%] backdrop-blur-[15px] border-[1px] border-[#ffffff42] p-6 rounded-lg text-white"
-  >
+  <section class="pt-[80px] pb-[80px] md:mt-24 md:mb-24">
     <div
-      class="modal-content bg-[#4b4b4b52] border-[1px] border-[#ffffff42] p-6 rounded-lg text-white relative text-white"
+      class="flex flex-col items-center gap-5 text-[16px] md:flex-row-reverse md:justify-between"
     >
-      <button class="absolute top-2 right-2 text-gray-600" @click="closeModal">
-        ✖
-      </button>
-      <!-- Компонента оплаты частями -->
-      <PayButtonOplataChastami
-        :productName="modalData.productName"
-        :productPrice="modalData.productPrice"
-      />
-    </div>
-  </div>
-
-  <section class="py-16 relative">
-    <div class="container-xl mx-auto px-4">
-      <div
-        class="text-[32px] sm:text-[48px] font-bold mx-auto w-fit mb-14"
-        data-aos="fade-up"
-      >
-        <h2 class="grad gradient-text text-center leading-none">ВІДГУКИ</h2>
+      <div>
+        <img src="../assets/images/pdf/16.jpg" alt="" class="md:w-[500px]" />
       </div>
-      <Carousel v-bind="config">
-        <Slide v-for="(image, index) in images" :key="index">
-          <div class="carousel__item">
-            <img :src="image" alt="Image" />
+      <div class="pb-[40px] ml-[15px] mr-[15px]">
+        <h2 class="text-[32px] md:text-[42px] text-center mb-4 md:text-left">
+          Бонуси
+        </h2>
+        <div class="grid grid-cols-1">
+          <div class="flex flex-col items-start md:items-start">
+            <div class="flex flex-row mb-6 items-center">
+              <img
+                src="@/assets/images/pdf/bonus_1.svg"
+                alt=""
+                width="90px"
+                class="mr-6"
+              />
+              <div class="grow">
+                <h2 class="text-[24px] mb-2 md:text-[32px]">Медитації</h2>
+                <p>
+                  Авторські медитації (3 унікальні медитації для зміни вашого
+                  мислення).
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-row mb-6 items-center">
+              <img
+                src="@/assets/images/pdf/bonus_2.svg"
+                alt=""
+                width="90px"
+                class="mr-6"
+              />
+              <div class="grow">
+                <h2 class="text-[24px] mb-2 md:text-[32px]">Ефіри</h2>
+                <p>Ефіри з фахівцями, які дають додаткові техніки та поради.</p>
+              </div>
+            </div>
           </div>
-        </Slide>
-        <template #addons>
-          <Navigation />
-        </template>
-      </Carousel>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Cart ref="cart" />
+  <section class="pb-[80px] md:mt-24 md:mb-24">
+    <img src="@/assets/images/pdf/17.jpg" alt="" />
+    <div class="pb-[40px] mt-[40px] ml-[15px] mr-[15px]">
+      <h2 class="text-[24px] md:text-[42px] mb-8">Тарифи</h2>
+      <div class="overflow-x-auto">
+        <table
+          class="min-w-full bg-[#16153A] rounded-lg border border-[#45445D]"
+        >
+          <thead>
+            <tr class="rounded-lg">
+              <th
+                class="font-[300] py-2 px-3 bg-[#16153A] text-center md:py-6 md:text-xl"
+              >
+                Пакет
+              </th>
+              <th
+                class="font-[300] py-2 px-3 bg-[#16153A] text-center md:py-6 md:text-xl"
+              >
+                Ціна
+              </th>
+              <th
+                class="font-[300] py-2 px-3 bg-[#16153A] text-center md:py-6 md:text-xl"
+              >
+                Включено
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-[#45445D] bg-[#0B0A2A]">
+              <td class="py-2 px-2 text-center md:text-xl md:py-6">Стандарт</td>
+              <td class="py-2 px-2 text-center md:text-xl md:py-6">
+                $199 ($400)
+              </td>
+              <td
+                class="py-2 px-2 text-left text-[14px] md:text-xl md:py-6 md:w-[400px]"
+              >
+                17 уроків, 7 вебінарів, 7 розборів, випускний, можливість
+                виграти 7 000 гривень, доступ до всіх презентацій, чат
+                нетворкінгу, бонусні ефіри з фахівцями, 3 авторські медитації.
+              </td>
+              <td class="py-2 px-2 text-center md:text-xl md:py-6">
+                <button
+                  @click="addToCart({ name: 'Стандарт', price: 199 })"
+                  class="bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white p-2 rounded"
+                >
+                  ADD TO CART
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="py-2 px-2 text-center md:text-xl md:py-6">VIP</td>
+              <td class="py-2 px-2 text-center md:text-xl md:py-6">
+                $700 ($900)
+              </td>
+              <td
+                class="py-2 px-2 text-left text-[14px] md:text-xl md:py-6 md:w-[400px]"
+              >
+                Все з пакету "Стандарт", а також: чат VIP зі мною особисто, 3
+                групових розбори, додаткова авторська медитація "Гроші".
+              </td>
+              <td class="py-2 px-2 text-center md:text-xl md:py-6">
+                <button
+                  @click="addToCart({ name: 'VIP', price: 700 })"
+                  class="bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white p-2 rounded"
+                >
+                  ADD TO CART
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="pt-[80px] pb-[80px] md:mt-24 md:mb-24">
+    <div class="flex flex-col items-center gap-5 text-[16px] md:flex-row">
+      <div>
+        <img src="../assets/images/pdf/24.jpg" alt="" class="md:w-[500px]" />
+      </div>
+      <div class="pb-[40px] ml-[15px] mr-[15px]">
+        <h2 class="text-[24px] mb-2 md:text-[42px]">Унікальна пропозиція</h2>
+        <div
+          class="flex flex-col items-center md:flex-row md:flex-wrap md:gap-5"
+        >
+          <div
+            class="mb-4 p-2 flex flex-col items-left bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white text-[12px] font-semibold rounded-lg shadow-lg w-[220px] md:h-[150px] md:grow"
+          >
+            <h3 class="text-[16px] mb-2">Знижка</h3>
+            <p class="text-[16px]">
+              Прийміть рішення за 1 500 гривень та забронюйте своє місце за
+              найкращою ціною!
+            </p>
+          </div>
+          <div
+            class="mb-4 p-2 flex flex-col items-left bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white text-[12px] font-semibold rounded-lg shadow-lg w-[220px] md:h-[150px] md:grow"
+          >
+            <h3 class="text-[16px] mb-2">Аванс</h3>
+            <p class="text-[16px]">Внесіть аванс зараз та зафіксуйте знижку.</p>
+          </div>
+          <div
+            class="mb-4 p-2 flex flex-col items-left bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white text-[12px] font-semibold rounded-lg shadow-lg w-[220px] md:h-[80px] md:grow"
+          >
+            <h3 class="text-[16px] mb-2">Оплата</h3>
+            <p class="text-[16px]">Сплатіть пізніше або одразу.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
 
-<script setup>
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import { onMounted } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
-import { useCookies } from '@vueuse/integrations/useCookies'
-import PaymentButton from '@/components/paymentButton.vue'
-import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Navigation } from 'vue3-carousel'
-import img1 from '@/assets/images/vidguk/photo_1_2024-11-12_10-45-42.jpg'
-import img2 from '@/assets/images/vidguk/photo_2_2024-11-12_10-45-42.jpg'
-import img3 from '@/assets/images/vidguk/photo_3_2024-11-12_10-45-42.jpg'
-import img4 from '@/assets/images/vidguk/photo_4_2024-11-12_10-45-42.jpg'
-import img5 from '@/assets/images/vidguk/photo_5_2024-11-12_10-45-42.jpg'
-import img6 from '@/assets/images/vidguk/photo_6_2024-11-12_10-45-42.jpg'
-import img7 from '@/assets/images/vidguk/photo_7_2024-11-12_10-45-42.jpg'
-import img8 from '@/assets/images/vidguk/photo_8_2024-11-12_10-45-42.jpg'
-import img9 from '@/assets/images/vidguk/photo_9_2024-11-12_10-45-42.jpg'
-import img10 from '@/assets/images/vidguk/photo_10_2024-11-12_10-45-42.jpg'
-import PayButtonOplataChastami from '~/components/PayButtonOplataChastami.vue'
+<script>
+import Cart from '@/components/new/Cart.vue'
 
-const isModalOpen = ref(false)
-const modalData = ref({
-  productName: '',
-  productPrice: 0,
-})
-
-// Открытие модального окна с передачей данных
-const openModal = (productName, productPrice) => {
-  modalData.value = { productName, productPrice }
-  isModalOpen.value = true
-  document.body.classList.add('no-scroll')
-}
-
-// Закрытие модального окна
-const closeModal = () => {
-  isModalOpen.value = false
-  modalData.value = { productName: '', productPrice: 0 }
-  document.body.classList.remove('no-scroll')
-}
-
-const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10]
-
-const config = {
-  itemsToShow: 1,
-  wrapAround: true,
-  transition: 300,
-  mouseDrag: true,
-  touchDrag: true,
-  snapAlign: 'center',
-  breakpointMode: 'viewport',
-  breakpoints: {
-    // 300px and up
-    300: {
-      itemsToShow: 1.2,
-      snapAlign: 'center',
-    },
-    // 400px and up
-    400: {
-      itemsToShow: 1.2,
-      snapAlign: 'center',
-    },
-    // 500px and up
-    500: {
-      itemsToShow: 1.2,
-      snapAlign: 'center',
+export default {
+  components: { Cart },
+  methods: {
+    addToCart(item) {
+      if (this.$refs.cart) {
+        this.$refs.cart.isOpen(true)
+        this.$refs.cart.addToCart(item)
+      } else {
+        console.error('Cart component is not available')
+      }
     },
   },
 }
-
-const route = useRoute()
-const router = useRouter()
-const cookies = useCookies()
-
-const toast = ref({
-  visible: false,
-  title: '',
-  message: '',
-  type: 'info',
-})
-
-const showToast = (title, message, type = 'info') => {
-  toast.value = { visible: true, title, message, type }
-  setTimeout(() => {
-    toast.value.visible = false
-  }, 3000)
-}
-
-const checkPaymentStatus = async () => {
-  const invoiceId = cookies.get('invoiceId')
-  if (!invoiceId) return
-
-  try {
-    const response = await $fetch('/api/check-invoice-status', {
-      method: 'GET',
-      query: {
-        invoiceId,
-      },
-    })
-
-    if (response.status === 'success') {
-      showToast(
-        'Оплата успішна',
-        'Ваш платіж був успішно оброблений.',
-        'success',
-      )
-    } else {
-      showToast(
-        'Оплата не вдалася',
-        'Сталася помилка під час обробки вашого платежу.',
-        'error',
-      )
-    }
-
-    cookies.remove('invoiceId')
-  } catch (error) {
-    console.error('Ошибка при проверке статуса счета:', error)
-  }
-}
-
-onMounted(() => {
-  if (route.query['check-pay']) {
-    checkPaymentStatus()
-    router.replace({ query: null })
-  }
-  setTimeout(() => {
-    AOS.init()
-  }, 1000)
-})
-onUpdated(async () => {
-  AOS.refreshHard()
-})
 </script>
 
-<style>
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 50;
-}
-.modal-content {
-  width: 350px;
-}
-body.no-scroll {
-  overflow: hidden;
-}
-.carousel__item {
-  padding: 5px;
-}
-
-.carousel__viewport {
-  perspective: 2000px;
-}
-
-.carousel__track {
-  transform-style: preserve-3d;
-}
-
-.carousel__slide--sliding {
-  transition: 0.5s;
-}
-
-.carousel__slide {
-  opacity: 0.9;
-  transform: rotateY(-20deg) scale(0.9);
-}
-
-.carousel__slide--active ~ .carousel__slide {
-  transform: rotateY(20deg) scale(0.9);
-}
-
-.carousel__slide--prev {
-  opacity: 1;
-  transform: rotateY(-10deg) scale(0.95);
-}
-
-.carousel__slide.carousel__slide--next {
-  opacity: 1;
-  transform: rotateY(10deg) scale(0.95);
-}
-
-.carousel__slide--active {
-  opacity: 1;
-  transform: rotateY(0) scale(1);
-}
-
-.bg-hero-image {
-  position: relative;
-}
-
-.bg-hero-image::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('@/assets/images/background-hero-section.png');
-  background-size: cover;
-  background-position-x: left;
-  opacity: 0.7;
-  z-index: 0;
-}
-
-.hero-image {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 100px;
-  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.31))
-    drop-shadow(0 0 30px rgba(255, 255, 255, 0.295));
-}
-
-.gradient-text {
-  background: linear-gradient(
-    149deg,
-    rgba(83, 83, 83, 1) 0%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(83, 83, 83, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.text-before {
-  padding-left: 35px;
-}
-
-.text-before::before {
-  content: '';
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(to right, #fada8f, #ffffff, #fada8f);
-  border-radius: 50%;
-  display: inline-block;
-  z-index: 10;
-  content: '';
-  left: 0;
-  position: absolute;
-}
-</style>
+<style lang="scss" scoped></style>
