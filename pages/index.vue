@@ -2,7 +2,7 @@
   <section class="mb-[40px]">
     <div class="flex flex-col md:flex-row items-center gap-5 text-[16px]">
       <div>
-        <img src="../assets/images/pdf/3.jpg" alt="" class="md:w-[500px]" />
+        <img src="../assets/images/pdf/photo_2024-12-04_21-06-47-removebg.png" alt="" class="md:w-[500px]" />
       </div>
       <div class="ml-[15px] mr-[15px]">
         <div class="flex flex-col items-center md:items-start">
