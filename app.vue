@@ -19,7 +19,14 @@
     </div>
   </transition> -->
   <div class="bg-color wrapper">
-    <NuxtLayout><NuxtPage /></NuxtLayout>
+    <NuxtLayout>
+      <div class="z-20 relative">
+        <NuxtPage />
+      </div>
+      <div class="z-10 relative">
+        <Footer />
+      </div>
+    </NuxtLayout>
   </div>
 </template>
 
