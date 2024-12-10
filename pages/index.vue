@@ -334,8 +334,11 @@
                   @click="addToCart({ name: 'Стандарт', price: 199 })"
                   class="bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white p-2 rounded"
                 >
-                  ADD TO CART
+                  Оплата Monobank
                 </button>
+              </td>
+              <td class="py-2 px-2 text-center md:text-xl md:py-6">
+                <a href="https://secure.wayforpay.com/button/b17499f44610a"> <span class="bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white p-2 rounded">Оплатити WayForPay</span></a>
               </td>
             </tr>
             <tr>
@@ -354,8 +357,11 @@
                   @click="addToCart({ name: 'VIP', price: 700 })"
                   class="bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white p-2 rounded"
                 >
-                  ADD TO CART
+                  Оплата Monobank
                 </button>
+              </td>
+              <td class="py-2 px-2 text-center md:text-xl md:py-6">
+                <a href="https://secure.wayforpay.com/button/bdd18266fa677"><span class="bg-gradient-to-r from-[#361B6C] to-[#25196B] text-white p-2 rounded">Оплатити WayForPay</span></a>
               </td>
             </tr>
           </tbody>
