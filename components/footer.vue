@@ -16,6 +16,10 @@
         <p class="hover:text-pink-300 text-left">
           <a href="mailto:elenaoniua@gmail.com">elenaoniua@gmail.com</a>
         </p>
+        <h3 class="text-lg font-bold">Надавач послуг:</h3>
+        <p class="text-lg">ФОП Оніщенко Олена Олегівна ІНН 2963403027 Місце</p>
+        <h3 class="text-lg font-bold">Реєстрації:</h3>
+        <p class="text-lg">м.Чорноморськ , вул.Паркова 14а, кв.75</p>
       </div>
 
       <!-- Links -->
@@ -77,7 +81,11 @@
             <img width="100" src="@/assets/images/visa.svg" alt="" />
           </li>
           <li>
-            <img width="40" src="@/assets/images/white-stroke+shadow.png" alt="" />
+            <img
+              width="40"
+              src="@/assets/images/white-stroke+shadow.png"
+              alt=""
+            />
           </li>
         </ul>
       </div>
